@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+
+.topContainer {
+    height: 100vh;
+    width: 100vw;
+    border: black 1px solid;
+}
