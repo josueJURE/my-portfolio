@@ -11,6 +11,35 @@ body {
 
 .topContainer {
     height: 100vh;
-    width: 100vw;
+    width: 80vw;
     border: black 1px solid;
 }
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px black solid;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    flex-grow: 2;
+
+} 
+
+.logo {
+    flex-grow: 1;
+}
+
+
+
+
