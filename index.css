@@ -36,8 +36,18 @@ ul {
 
 } 
 
-.logo {
+.parentLogo {
     flex-grow: 1;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+    border: 1px black solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume {
