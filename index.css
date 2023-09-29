@@ -6,6 +6,11 @@ body {
   display: flex;
   justify-content: center;
   background-color: #171b26;
+  font-family: "Caveat", cursive;
+  font-family: "Onest", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .topContainer {
@@ -31,7 +36,7 @@ ul {
   align-items: center;
   list-style: none;
   flex-grow: 2;
-  color: white
+  color: white;
 }
 
 .parent-logo {
