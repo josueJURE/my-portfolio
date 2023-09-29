@@ -89,5 +89,10 @@ footer {
 .intro ul {
     display: flex;
     flex-direction: column;
-   
+    list-style: none;
+}
+
+.picture {
+    height: 16px;
+    width: 14px;
 }
