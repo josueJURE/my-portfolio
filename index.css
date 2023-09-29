@@ -1,63 +1,54 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
 .topContainer {
-    height: 100vh;
-    width: 80vw;
-    border: black 1px solid;
+  height: 100vh;
+  width: 80vw;
+  border: black 1px solid;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    border: 1px black solid;
-    height: 40px;
-    width: 100%;
-    position: relative;
-    padding: 10px;
-
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px black solid;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  padding: 10px;
 }
 
 ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    flex-grow: 2;
-
-} 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex-grow: 2;
+}
 
 .parent-logo {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .logo {
-    height: 35px;
-    width: 35px;
-    border: 1px black solid;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 35px;
+  width: 35px;
+  border: 1px black solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .resume {
-    border: 1px black solid;
-    border-radius: 5px;
-    padding: 5px;
+  /* height: 35px; */
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 5px;
 }
-
-
-
-
-
-
