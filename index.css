@@ -28,6 +28,11 @@ html {
   background: linear-gradient(#232932, #2c3138, #232932);
 }
 
+/* Navigation */
+.navigation {
+  display: none;
+}
+
 /*Landing */
 .landing {
   width: 100%;
