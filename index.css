@@ -94,7 +94,22 @@ html {
   height: 3rem;
   border: 0.2rem solid #bbb;
   background-color: #1d222a;
+  border-radius: 50%;
   position: absolute;
+  left: -1.65rem;
+  top: -5rem;
+}
+
+.section-border::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border: 0.2rem solid #bbb;
+  background-color: #1d222a;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.65rem;
+  bottom: -5rem;
 }
 
 .dev-img-wrapper {
