@@ -282,6 +282,13 @@ html {
   right: 2rem;
 }
 
+.dev-work span:nth-child(1) {
+  font-size: 3rem;
+  width: 50%;
+  text-align: center;
+
+}
+
 
 /*  migth have to be changed later */
 
