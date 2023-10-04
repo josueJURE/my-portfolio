@@ -137,6 +137,17 @@ html {
   color: #29a587;
 }
 
+.prof {
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: .2rem;
+  margin-bottom: 6rem;
+}
+
+
+
 .dev-img-wrapper {
   width: 35rem;
   height: 35rem;
