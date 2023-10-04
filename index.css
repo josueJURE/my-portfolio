@@ -219,6 +219,13 @@ html {
   transform: translateY(-50%);
 }
 
+.cv span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 .dev-img-wrapper {
   width: 35rem;
   height: 35rem;
