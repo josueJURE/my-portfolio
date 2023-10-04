@@ -175,6 +175,18 @@ html {
   cursor: pointer;
 }
 
+.btn {
+  width: 20rem;
+  height: 6rem;
+  border: 0.2rem solid #bbb;
+  border-radius: 3rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
 .dev-img-wrapper {
   width: 35rem;
   height: 35rem;
