@@ -186,6 +186,7 @@ html {
   color: #fff;
   cursor: pointer;
   margin-right: 7rem;
+  position: relative;
 }
 
 .btn::before {
