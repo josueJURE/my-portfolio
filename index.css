@@ -226,6 +226,10 @@ html {
   color: #fff;
 }
 
+.developer-img {
+  position: relative;
+}
+
 
 
 .dev-img-wrapper {
@@ -251,17 +255,40 @@ html {
   border-radius: 50%;
 }
 
-.developer-info {
+.dev-work {
+  width: 25rem;
+  height: 9rem;
+  background-color: #1d222a;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0.2rem solid #bbb;
+  border-radius: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+
+.dev-experience {
+  bottom: 10rem
+}
+
+
+/*  migth have to be changed later */
+
+/* .developer-info {
+  margin-right: 15rem;
   width: 50rem;
   height: 50rem;
-}
+} */
 
-.dev-img-wrapper img {
+
+/*  migth have to be changed later */
+
+/* .developer-info {
   width: 100%;
   height: 100%;
-}
-
-.developer-info {
-  width: 100%;
-  height: 100%;
-}
+} */
