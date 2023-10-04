@@ -132,6 +132,10 @@ html {
   text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
 }
 
+.name span {
+  color: #29a587;
+}
+
 .dev-img-wrapper {
   width: 35rem;
   height: 35rem;
