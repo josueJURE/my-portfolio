@@ -199,6 +199,24 @@ html {
   top: 0;
   left: 0;
   z-index: -10;
+  transform: scale(0);
+  transition: transform 0.5s;
+}
+
+.btn:hover::before {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.cv-btn::after {
+  content: "";
+  width: 5rem;
+  height: 0.2rem;
+  background-color: #bbb;
+  position: absolute;
+  top: 50%;
+  right: -5rem;
+  transform: translateY(-50%);
 }
 
 .dev-img-wrapper {
