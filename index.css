@@ -29,6 +29,19 @@ html {
 }
 
 /* Navigation */
+
+.menu-icon {
+  /* width: 3rem; */
+  height: 3rem;
+  width: 3rem;
+  background-color: #ccc;
+  position: fixed;
+  top: 5rem;
+  right: 5rem;
+}
+
+
+
 .navigation {
   display: none;
 }
