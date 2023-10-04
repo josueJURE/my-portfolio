@@ -142,7 +142,7 @@ html {
   font-weight: 300;
   text-transform: uppercase;
   color: #fff;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 6rem;
 }
 
@@ -167,9 +167,13 @@ html {
   margin-bottom: 5rem;
 }
 
-
-
-
+.social-media i {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-right: 2rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
 
 .dev-img-wrapper {
   width: 35rem;
