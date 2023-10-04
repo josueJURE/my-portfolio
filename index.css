@@ -230,8 +230,6 @@ html {
   position: relative;
 }
 
-
-
 .dev-img-wrapper {
   width: 30rem;
   height: 30rem;
@@ -286,9 +284,14 @@ html {
   font-size: 3rem;
   width: 50%;
   text-align: center;
-
 }
 
+.dev-work span:nth-child(2) {
+  color: #29a587;
+  width: 50%;
+
+
+}
 
 /*  migth have to be changed later */
 
@@ -297,7 +300,6 @@ html {
   width: 50rem;
   height: 50rem;
 } */
-
 
 /*  migth have to be changed later */
 
