@@ -684,6 +684,12 @@ html {
   cursor: pointer;
 }
 
+.project-btn i {
+  color: #29a587;
+  margin-left: 1rem;
+  transition: margin-left 0.3s;
+}
+
 
 
 /* End of Project */
