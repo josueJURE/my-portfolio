@@ -482,6 +482,15 @@ html {
   bottom: -1.25rem;
 }
 
+.skills-card-progress::before {
+  content: "";
+  height: 0.2rem;
+  background-color: #29a587;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 
 /* End of Skills */
