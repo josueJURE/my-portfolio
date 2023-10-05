@@ -51,8 +51,8 @@ html {
 
 .navigation {
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -8rem;
+  right: -63rem;
   width: 50rem;
   height: 100vh;
   background-color: #31363d;
@@ -60,6 +60,7 @@ html {
   display: flex;
   align-items: center;
   padding-left: 8rem;
+  transform: rotateZ(-15deg);
 }
 
 .nav-items {
