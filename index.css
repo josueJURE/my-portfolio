@@ -500,6 +500,97 @@ html {
   transform: translateY(-50%);
 }
 
+.skills-card:nth-child(1) .skills-card-progress {
+  right: 10%;
+}
+
+.skills-card:nth-child(1) .skills-card-progress::before {
+  width: 33rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(1) .skills-card-progress::after {
+  width: 4rem;
+  right: -4.3rem;
+}
+
+.skills-card:nth-child(2) .skills-card-progress {
+  right: 15%;
+}
+
+.skills-card:nth-child(2) .skills-card-progress::before {
+  width: 31.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(2) .skills-card-progress::after {
+  width: 5.8rem;
+  right: -6.1rem;
+}
+
+.skills-card:nth-child(3) .skills-card-progress {
+  right: 20%;
+}
+
+.skills-card:nth-child(3) .skills-card-progress::before {
+  width: 29.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(3) .skills-card-progress::after {
+  width: 7.9rem;
+  right: -8.2rem;
+}
+
+.skills-card:nth-child(4) .skills-card-progress {
+  right: 30%;
+}
+
+.skills-card:nth-child(4) .skills-card-progress::before {
+  width: 25.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(4) .skills-card-progress::after {
+  width: 12rem;
+  right: -12.2rem;
+}
+
+.skills-card:nth-child(5) .skills-card-progress {
+  right: 20%;
+}
+
+.skills-card:nth-child(5) .skills-card-progress::before {
+  width: 29.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(5) .skills-card-progress::after {
+  width: 7.9rem;
+  right: -8.2rem;
+}
+
+.skills-card:nth-child(6) .skills-card-progress {
+  right: 30%;
+}
+
+.skills-card:nth-child(6) .skills-card-progress::before {
+  width: 25.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(6) .skills-card-progress::after {
+  width: 12rem;
+  right: -12.2rem;
+}
+
+.skills .section-border {
+  position: absolute;
+  left: 20rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 
 /* End of Skills */
