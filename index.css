@@ -616,4 +616,17 @@ html {
   z-index: 100;
 }
 
+.project-card {
+  width: 40rem;
+  height: 55rem;
+  background-color: #1d222a;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 /* End of Project */
