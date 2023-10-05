@@ -421,4 +421,10 @@ html {
   margin-bottom: 3rem;
 }
 
+.sub-heading {
+  font-size: 2rem;
+  color: #29a587;
+  text-transform: uppercase;
+}
+
 /* End of Skills */
