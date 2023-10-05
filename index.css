@@ -690,6 +690,10 @@ html {
   transition: margin-left 0.3s;
 }
 
+.project-btn:hover i {
+  margin-left: 2rem;
+}
+
 
 
 /* End of Project */
