@@ -446,7 +446,7 @@ html {
   height: 18rem;
   margin: 3rem;
   padding: 0 3rem;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   position: relative;
 }
 
@@ -463,6 +463,13 @@ html {
 
 .skill span:nth-child(2) {
   color: #29a587;
+}
+
+.skills-card p {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  color: #bbb;
+  margin-bottom: 4rem;
 }
 
 
