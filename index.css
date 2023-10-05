@@ -667,6 +667,12 @@ html {
   /* text-transform: uppercase; */
 }
 
+.project-desc {
+  font-family: "Caveat", cursive;
+  font-size: 2.2rem;
+  color: #ccc;
+}
+
 
 
 /* End of Project */
