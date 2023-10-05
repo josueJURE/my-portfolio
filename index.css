@@ -57,6 +57,14 @@ html {
   height: 100vh;
   background-color: #31363d;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  padding-left: 8rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-direction: column;
 }
 
 /*Landing */
