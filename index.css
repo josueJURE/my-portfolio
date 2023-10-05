@@ -74,6 +74,12 @@ html {
   letter-spacing: .2rem;
   color: #eee;
   margin: 1rem 0;
+  transform: color 0.5s;
+}
+
+.nav-items a:hover {
+  color: #29a587;
+
 }
 
 /*Landing */
