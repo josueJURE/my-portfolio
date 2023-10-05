@@ -659,6 +659,14 @@ html {
   letter-spacing: 0.1rem;
 }
 
+.project-name {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  margin-top: -2rem;
+  /* text-transform: uppercase; */
+}
+
 
 
 /* End of Project */
