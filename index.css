@@ -31,16 +31,23 @@ html {
 /* Navigation */
 
 .menu-icon {
-  /* width: 3rem; */
   height: 3rem;
   width: 3rem;
-  background-color: #ccc;
   position: fixed;
   top: 5rem;
   right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
 }
 
-
+.line {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #bbb;
+}
 
 .navigation {
   display: none;
@@ -302,8 +309,6 @@ html {
 .dev-work span:nth-child(2) {
   color: #29a587;
   width: 50%;
-
-
 }
 
 /*  migth have to be changed later */
