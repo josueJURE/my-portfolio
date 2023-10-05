@@ -412,4 +412,13 @@ html {
   transform: translateY(-50%);
 }
 
+.section-heading {
+  font-size: 6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
 /* End of Skills */
