@@ -606,4 +606,14 @@ html {
   /* margin-bottom: 10rem; */
 }
 
+.projects-cards {
+  width: 140rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+  z-index: 100;
+}
+
 /* End of Project */
