@@ -456,6 +456,11 @@ html {
   margin-bottom: 2rem;
 }
 
+.skill span {
+  font-size: 2rem;
+  color: #eee;
+}
+
 
 
 /* End of Skills */
