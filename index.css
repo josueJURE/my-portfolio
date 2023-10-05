@@ -461,6 +461,10 @@ html {
   color: #eee;
 }
 
+.skill span:nth-child(2) {
+  color: #29a587;
+}
+
 
 
 /* End of Skills */
