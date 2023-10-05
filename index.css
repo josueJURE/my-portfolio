@@ -50,7 +50,13 @@ html {
 }
 
 .navigation {
-  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50rem;
+  height: 100vh;
+  background-color: #31363d;
+  z-index: 100;
 }
 
 /*Landing */
