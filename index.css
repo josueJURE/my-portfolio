@@ -427,4 +427,11 @@ html {
   text-transform: uppercase;
 }
 
+.sub-heading span {
+  font-family: "Caveat", cursive;
+  font-size: 3.5rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
 /* End of Skills */
