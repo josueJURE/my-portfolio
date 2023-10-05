@@ -698,6 +698,16 @@ html {
   margin: 5rem 0 0 0;
 }
 
+.projects .section-border {
+  height: 140rem;
+  position: absolute;
+  top: 50%;
+  right: 5rem;
+  transform: translateY(-50%);
+  margin: 0;
+}
+/* End
+
 
 
 /* End of Project */
