@@ -651,6 +651,14 @@ html {
   margin-top: -3rem;
 }
 
+.techs span {
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #29a587;
+  letter-spacing: 0.1rem;
+}
+
 
 
 /* End of Project */
