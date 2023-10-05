@@ -434,4 +434,11 @@ html {
   color: #fff;
 }
 
+.skills-cards {
+  width: 140rem;
+  margin: 8rem 0 0 10rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /* End of Skills */
