@@ -647,6 +647,10 @@ html {
   transform: scale(1.3);
 }
 
+.techs {
+  margin-top: -3rem;
+}
+
 
 
 /* End of Project */
