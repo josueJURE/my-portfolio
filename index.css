@@ -405,4 +405,11 @@ html {
   align-items: center;
 }
 
+.skills .section-border {
+  position: absolute;
+  left: 20rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 /* End of Skills */
