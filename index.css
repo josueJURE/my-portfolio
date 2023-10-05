@@ -673,6 +673,17 @@ html {
   color: #ccc;
 }
 
+.project-btn {
+  width: 20rem;
+  height: 4rem;
+  background-color: transparent;
+  font-size: 1.8rem;
+  text-align: left;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
 
 
 /* End of Project */
