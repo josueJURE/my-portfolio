@@ -52,13 +52,12 @@ html {
 }
 
 .change .line-1 {
-  transform: rotateZ(45deg) translate(.7rem, -.1rem);
+  transform: rotateZ(45deg) translate(0.7rem, -0.1rem);
 }
 
 .change .line-2 {
-  transform: rotateZ(-45deg)  translate(.7rem, -.1rem);
+  transform: rotateZ(-45deg) translate(0.7rem, -0.1rem);
 }
-
 
 .navigation {
   position: fixed;
@@ -72,7 +71,7 @@ html {
   align-items: center;
   padding-left: 8rem;
   transform: rotateZ(-15deg);
-  transition: all .6s;
+  transition: all 0.6s;
 }
 
 .change .navigation {
@@ -92,8 +91,6 @@ html {
   transition: all 0.5s 0.7s;
 }
 
-
-
 .nav-items {
   display: flex;
   flex-direction: column;
@@ -102,14 +99,14 @@ html {
 .change .nav-items {
   opacity: 1;
   visibility: visible;
-  transition: all .5s .7s;
+  transition: all 0.5s 0.7s;
 }
 
 .nav-items a {
   font-size: 3rem;
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   color: #eee;
   margin: 1rem 0;
   transform: color 0.5s;
@@ -117,7 +114,6 @@ html {
 
 .nav-items a:hover {
   color: #29a587;
-
 }
 
 /*Landing */
@@ -393,7 +389,6 @@ html {
   height: 100%;
 } */
 
-
 /* Skills */
 
 .skills {
@@ -591,8 +586,6 @@ html {
   transform: translateY(-50%);
 }
 
-
-
 /* End of Skills */
 
 /* Project */
@@ -604,8 +597,6 @@ html {
   flex-direction: column;
   align-items: center;
   /* margin-bottom: 10rem; */
-  background: linear-gradient(#232932, #2c3138, #232932);
-
 }
 
 .projects-cards {
@@ -711,7 +702,6 @@ html {
 
 /* End of Project */
 
-
 /*Contact  */
 
 .contact {
@@ -721,7 +711,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#232932, #2c3138, #232932);
 }
 
 .contact .section-border {
@@ -842,7 +831,6 @@ textarea {
   padding: 1rem 1rem 1rem 2rem;
 }
 
-
 .input-groups input {
   width: 35rem;
 }
@@ -870,10 +858,3 @@ textarea {
 /*End of container */
 
 /* End of Contact */
-
-
-
-
-
-
-
