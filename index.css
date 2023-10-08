@@ -129,7 +129,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   font-family: "Caveat", cursive;
-  font-size: 10rem;
+  font-size: 8rem;
   width: 100%;
   text-align: center;
   color: #31363d;
@@ -881,6 +881,13 @@ textarea {
   color: #fff;
 }
 
+.copyright span {
+  font-family: "Caveat", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #29a587;
+  margin-right: 1rem;
+}
 
 /* End of footer */
 /* End of Container */
