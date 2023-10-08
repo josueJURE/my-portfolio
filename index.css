@@ -847,6 +847,12 @@ textarea {
   width: 35rem;
 }
 
+.input-group textarea {
+  height: 12rem;
+  margin-bottom: 2rem;
+  resize: none;
+}
+
 
 
 
