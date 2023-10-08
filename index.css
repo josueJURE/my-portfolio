@@ -682,7 +682,8 @@ html {
   margin: 0;
 }
 
-.project-btn a {
+.project-btn a, 
+.btn a {
   color: white
 }
 
@@ -702,7 +703,7 @@ html {
 .contact .section-border {
   position: absolute;
   left: 5rem;
-  top: 30%;
+  top: 20%;
 }
 
 .contact-content {
