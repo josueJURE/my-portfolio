@@ -741,6 +741,12 @@ html {
   align-items: center;
 }
 
+.contact-left div {
+  display: flex;
+  align-items: center;
+  margin: 3rem 0;
+}
+
 
 
 
