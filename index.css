@@ -855,6 +855,8 @@ textarea {
   cursor: pointer;
 }
 
+/* End of Contact */
+
 /*Footer */
 .footer {
   width: 100%;
@@ -865,7 +867,13 @@ textarea {
   align-items: center;
 }
 
+.icons i {
+  font-size: 2rem;
+  color: #fff;
+  margin-right: 2rem;
+  text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
 
 
-
-/* End of Contact */
+/* End of footer */
