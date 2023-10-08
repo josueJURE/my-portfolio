@@ -853,6 +853,20 @@ textarea {
   resize: none;
 }
 
+.contact-btn {
+  width: calc(100% - 3rem);
+  height: 5rem;
+  background-color: #29a587;
+  border: 0.2rem solid #bbb;
+  border-radius: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
 
 
 
