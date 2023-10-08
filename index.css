@@ -708,8 +708,27 @@ html {
   transform: translateY(-50%);
   margin: 0;
 }
-/* End
-
-
 
 /* End of Project */
+
+
+/*Contact  */
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* End of Contact */
+
+
+
+
+
+
+
