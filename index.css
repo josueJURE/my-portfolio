@@ -773,6 +773,13 @@ html {
   right: -4rem;
 }
 
+.contact-info {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 
 
