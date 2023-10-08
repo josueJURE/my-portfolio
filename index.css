@@ -798,6 +798,14 @@ html {
   color: #777;
 }
 
+.contact-right {
+  width: 60rem;
+  height: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
