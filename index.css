@@ -806,6 +806,10 @@ html {
   align-items: center;
 }
 
+.input-groups {
+  display: flex;
+}
+
 
 
 
