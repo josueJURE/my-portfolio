@@ -762,6 +762,17 @@ html {
   position: relative;
 }
 
+.contact-left i::after {
+  content: "";
+  width: 4rem;
+  height: 0.2rem;
+  background-color: #bbb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -4rem;
+}
+
 
 
 
