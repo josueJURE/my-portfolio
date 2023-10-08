@@ -875,5 +875,12 @@ textarea {
   cursor: pointer;
 }
 
+.copyright,
+.author {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
 
 /* End of footer */
+/* End of Container */
