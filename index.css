@@ -843,6 +843,10 @@ textarea {
 }
 
 
+.input-groups input {
+  width: 35rem;
+}
+
 
 
 
