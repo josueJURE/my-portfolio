@@ -824,6 +824,10 @@ html {
   margin: 0 0 1.5rem 2rem;
 }
 
+.input-group label i {
+  font-size: 1.2rem;
+  color: #29a587;
+}
 
 
 
