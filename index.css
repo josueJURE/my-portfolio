@@ -20,8 +20,6 @@ html {
   font-size: 62.5%; /* 1rem equals 10px */
   scroll-behavior: smooth;
   background: linear-gradient(#232932, #2c3138, #232932);
-  
-  
 }
 
 /*Container */
@@ -143,8 +141,6 @@ html {
   color: #31363d;
   opacity: 0.5;
 }
-
-
 
 .logo {
   position: absolute;
@@ -331,8 +327,6 @@ html {
   overflow: hidden;
 }
 
-
-
 .dev-img-wrapper img {
   width: 100%;
   height: 100%;
@@ -376,8 +370,6 @@ html {
   color: #29a587;
   width: 50%;
 }
-
-
 
 /* Skills */
 
@@ -690,9 +682,9 @@ html {
   margin: 0;
 }
 
-.project-btn a, 
+.project-btn a,
 .btn a {
-  color: white
+  color: white;
 }
 
 /* End of Project */
@@ -886,20 +878,19 @@ textarea {
 
 /* End of footer */
 
-
-
-
 /* End of Container */
-
 
 /* responsiveness */
 
+@media (max-width: 1190px) {
+  .logo {
+    display: none;
+  }
 
-
-
-
-
-
-
+  .skills-cards {
+    width: 100rem;
+    margin: 8rem 0 0 10rem;
+}
+}
 
 /* End of responsiveness */
