@@ -891,6 +891,22 @@ textarea {
     width: 100rem;
     margin: 8rem 0 0 10rem;
 }
+
+.projects {
+  margin-top: 20rem;
 }
+.projects-cards {
+  width: 120rem;
+  /* display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  padding-bottom: 10rem;
+  z-index: 100; */
+}
+
+}
+
+
 
 /* End of responsiveness */
