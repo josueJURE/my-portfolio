@@ -907,7 +907,11 @@ textarea {
 }
 .projects .btn {
   position: absolute;
-  bottom: 0rem;
+  bottom: -10rem;
+}
+
+.contact {
+  margin-top: 20rem;
 }
 
 }
