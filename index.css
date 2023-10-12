@@ -84,6 +84,10 @@ html {
   transform: rotateZ(0);
 }
 
+.section-border {
+  display: none;
+}
+
 .navigation .section-border {
   opacity: 0;
   visibility: hidden;
@@ -889,6 +893,12 @@ textarea {
 
 
 /* responsiveness */
+
+
+
+
+
+
 
 
 
