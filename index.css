@@ -897,12 +897,17 @@ textarea {
 }
 .projects-cards {
   width: 120rem;
+  position: relative;
   /* display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10rem;
   padding-bottom: 10rem;
   z-index: 100; */
+}
+.projects .btn {
+  position: absolute;
+  bottom: 0rem;
 }
 
 }
