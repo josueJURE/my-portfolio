@@ -922,6 +922,12 @@ textarea {
   width: 100rem;
 }
 
+.skills .section-bg-heading {
+  bottom: -16rem;
+}
+
+
+
 }
 
 /* .contact-content {
