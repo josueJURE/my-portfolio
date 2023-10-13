@@ -901,12 +901,7 @@ textarea {
   .projects-cards {
     width: 120rem;
     position: relative;
-    /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 10rem;
-  padding-bottom: 10rem;
-  z-index: 100; */
+
   }
   .projects .btn {
     position: absolute;
@@ -962,16 +957,5 @@ textarea {
 }
 }
 
-/* .contact-content {
-  width: 120rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 7rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 
 /* End of responsiveness */
