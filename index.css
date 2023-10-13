@@ -929,7 +929,8 @@ textarea {
   .contact-content {
     flex-direction: column;
   }
-  .footer {
+  .footer,
+  #about-me .section-bg-heading {
     display: none;
   }
 
@@ -944,6 +945,17 @@ textarea {
     bottom: 0rem
   }
 }
+
+@media (max-width: 925px) {
+  .section-bg-heading {
+    display: none;
+}
+
+
+
+
+}
+
 
 /* .contact-content {
   width: 120rem;
