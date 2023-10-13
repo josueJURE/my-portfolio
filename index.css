@@ -949,7 +949,7 @@ textarea {
 
 @media (max-width: 765px) {
   .banner {
-    margin-top: 14rem;
+    margin-top: -10rem;
     flex-direction: column;
 }
 .skills {
@@ -979,6 +979,25 @@ textarea {
   html {
     font-size: 42.5%
   };
+}
+
+
+@media (max-width: 510px) {
+  html {
+    font-size: 32.5%
+  };
+  .banner{
+    margin-top: -30rem;
+  }
+  .skills {
+    margin-top: -36rem;
+}
+  .projects {
+    margin-top: 6rem;
+}
+  .contact-left {
+    margin-top: -6rem;
+}
 }
 
 
