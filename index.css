@@ -942,20 +942,25 @@ textarea {
     bottom: -57rem;
   }
   .projects .section-bg-heading {
-    bottom: 0rem
+    bottom: 0rem;
   }
 }
 
 @media (max-width: 925px) {
   .section-bg-heading {
     display: none;
+  }
 }
 
-
-
-
+@media (max-width: 765px) {
+  .banner {
+    margin-top: 14rem;
+    flex-direction: column;
 }
-
+.skills {
+  margin-top: 25rem;
+}
+}
 
 /* .contact-content {
   width: 120rem;
