@@ -20,7 +20,6 @@ html {
   font-size: 62.5%; /* 1rem equals 10px */
   scroll-behavior: smooth;
   background: linear-gradient(#232932, #2c3138, #232932);
-
 }
 
 /*Container */
@@ -883,8 +882,7 @@ textarea {
 /* responsiveness */
 
 @media (max-width: 1190px) {
-
-  html{
+  html {
     font-size: 52.5%;
   }
 
@@ -895,36 +893,42 @@ textarea {
   .skills-cards {
     width: 100rem;
     margin: 8rem 0 0 10rem;
-}
+  }
 
-.projects {
-  margin-top: 20rem;
-}
-.projects-cards {
-  width: 120rem;
-  position: relative;
-  /* display: flex;
+  .projects {
+    margin-top: 20rem;
+  }
+  .projects-cards {
+    width: 120rem;
+    position: relative;
+    /* display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10rem;
   padding-bottom: 10rem;
   z-index: 100; */
-}
-.projects .btn {
-  position: absolute;
-  bottom: -10rem;
+  }
+  .projects .btn {
+    position: absolute;
+    bottom: -10rem;
+  }
+
+  .contact {
+    margin-top: 20rem;
+  }
+  .contact-content {
+    width: 100rem;
+  }
+
+  .skills .section-bg-heading {
+    bottom: -16rem;
+  }
 }
 
-.contact {
-  margin-top: 20rem;
-}
-.contact-content {
-  width: 100rem;
-}
-
-.skills .section-bg-heading {
-  bottom: -16rem;
-}
+@media (max-width: 935px) {
+  .contact-content {
+    flex-direction: column;
+  }
 
 
 
@@ -941,7 +945,5 @@ textarea {
   justify-content: space-between;
   align-items: center;
 } */
-
-
 
 /* End of responsiveness */
