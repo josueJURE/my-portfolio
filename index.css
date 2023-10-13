@@ -20,6 +20,7 @@ html {
   font-size: 62.5%; /* 1rem equals 10px */
   scroll-behavior: smooth;
   background: linear-gradient(#232932, #2c3138, #232932);
+
 }
 
 /*Container */
@@ -27,7 +28,6 @@ html {
 .container {
   width: 100%;
   height: 100%;
-  /* background: linear-gradient(#232932, #2c3138, #232932); */
 }
 
 /* Navigation */
@@ -883,6 +883,7 @@ textarea {
 /* responsiveness */
 
 @media (max-width: 1190px) {
+
   .logo {
     display: none;
   }
@@ -913,8 +914,23 @@ textarea {
 .contact {
   margin-top: 20rem;
 }
+.contact-content {
+  width: 100rem;
+}
 
 }
+
+/* .contact-content {
+  width: 120rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
 
 
 
