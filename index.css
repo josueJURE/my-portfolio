@@ -957,5 +957,23 @@ textarea {
 }
 }
 
+@media (max-width: 735px) {
+  .skills-cards {
+    width: 70rem;
+  }
+  .projects {
+    margin-top: 80rem;
+}
+}
+
+
+
+/* pickup where you left off 13/10/23 */
+
+
+/* .skills-cards {
+  width: 100rem;
+  margin: 8rem 0 0 10rem;
+} */
 
 /* End of responsiveness */
