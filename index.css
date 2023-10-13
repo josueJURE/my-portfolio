@@ -884,6 +884,10 @@ textarea {
 
 @media (max-width: 1190px) {
 
+  html{
+    font-size: 52.5%;
+  }
+
   .logo {
     display: none;
   }
