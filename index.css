@@ -975,6 +975,11 @@ textarea {
   }
 }
 
+@media (max-width: 630px) {
+  html {
+    font-size: 42.5%
+  };
+}
 
 
 /* pickup where you left off 13/10/23 */
