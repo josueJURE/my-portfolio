@@ -959,7 +959,9 @@ textarea {
 
 @media (max-width: 735px) {
   .skills-cards {
-    width: 70rem;
+    flex-direction: column;
+    align-items: center;
+    
   }
   .projects {
     margin-top: 80rem;
