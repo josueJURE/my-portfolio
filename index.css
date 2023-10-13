@@ -929,9 +929,20 @@ textarea {
   .contact-content {
     flex-direction: column;
   }
+  .footer {
+    display: none;
+  }
 
+  .contact-left {
+    margin-top: 55rem;
+  }
 
-
+  .section-bg-heading {
+    bottom: -57rem;
+  }
+  .projects .section-bg-heading {
+    bottom: 0rem
+  }
 }
 
 /* .contact-content {
