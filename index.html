@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
@@ -359,45 +359,34 @@
             </div>
           </div>
           <div class="contact-right">
-            <form
-              action="mailto:josue.jure@gmail.com"
-              method="post"
-              enctype="text/plain"
-            >
-              <label for="subject">Subject:</label>
-              <input type="text" id="subject" name="subject" /><br /><br />
-              <label for="body">Message:</label>
-              <textarea id="body" name="body"></textarea><br /><br />
-              <input type="submit" value="Send Email" />
-            </form>
-            <form  >
+            <form action="http://localhost:8080/" method="POST">
               <div class="input-groups">
                 <div class="input-group">
                   <label for="name"
                     >Your full name <i class="fa-solid fa-asterisk"></i
                   ></label>
-                  <input type="text" />
+                  <input type="text" name="name" />
                 </div>
                 <div class="input-group">
                   <label for="email"
                     >Your email address <i class="fa-solid fa-asterisk"></i
                   ></label>
-                  <input type="email" />
+                  <input type="email" name="email" />
                 </div>
               </div>
               <div class="input-group">
                 <label for="subject"
                   >Your subject <i class="fa-solid fa-asterisk"></i
                 ></label>
-                <input type="text" />
+                <input type="text" name="subject" />
               </div>
               <div class="input-group">
                 <label for="message"
                   >Your message <i class="fa-solid fa-asterisk"></i
                 ></label>
-                <textarea></textarea>
+                <textarea name="message"></textarea>
               </div>
-              <button type="button" class="contact-btn">Send Message</button>
+              <button type="submit" class="contact-btn">Send Message</button>
             </form>
           </div>
         </div>
