@@ -29,6 +29,11 @@ html {
   height: 100%;
 }
 
+video {
+  width: 36rem;
+  height: 20rem;
+}
+
 /* Navigation */
 
 .menu-icon {
