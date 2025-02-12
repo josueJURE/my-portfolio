@@ -565,6 +565,20 @@ video {
   right: -12.2rem;
 }
 
+.skills-card:nth-child(7) .skills-card-progress {
+  right: 30%;
+}
+
+.skills-card:nth-child(7) .skills-card-progress::before {
+  width: 25.5rem;
+  right: 2.5rem;
+}
+
+.skills-card:nth-child(7) .skills-card-progress::after {
+  width: 12rem;
+  right: -12.2rem;
+}
+
 .skills .section-border {
   position: absolute;
   left: 5rem;
