@@ -252,6 +252,7 @@ video {
   line-height: 1;
   color: #a9abae;
   margin-bottom: 5rem;
+  text-align: justify;
 }
 
 .social-media {
@@ -451,6 +452,7 @@ video {
   font-size: 2rem;
   color: #bbb;
   margin-bottom: 4rem;
+  text-align: justify;
 }
 
 .skills-card-progress {
