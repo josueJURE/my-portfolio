@@ -304,7 +304,7 @@
       <!-- End of Projects -->
 
       <!-- Contact -->
-      <!-- <section class="contact" id="contact">
+      <section class="contact" id="contact">
         <h1 class="section-bg-heading">Contact Me</h1>
         <h1 class="section-heading">Contact</h1>
         <h3 class="sub-heading">Let's <span>Have Some Talk</span></h3>
@@ -341,28 +341,28 @@
             </div>
           </div>
           <div class="contact-right">
-            <form action="http://localhost:8080/" method="POST">
+            <form action="http://localhost:3000/" method="POST">
               <div class="input-groups">
-                <div class="input-group">
+                <div class="input-group" name="user_name">
                   <label for="name"
                     >Your full name <i class="fa-solid fa-asterisk"></i
                   ></label>
                   <input type="text" name="name" />
                 </div>
-                <div class="input-group">
+                <div class="input-group" name="user_email">
                   <label for="email"
                     >Your email address <i class="fa-solid fa-asterisk"></i
                   ></label>
                   <input type="email" name="email" />
                 </div>
               </div>
-              <div class="input-group">
+              <div class="input-group" name="user_subject">
                 <label for="subject"
                   >Your subject <i class="fa-solid fa-asterisk"></i
                 ></label>
                 <input type="text" name="subject" />
               </div>
-              <div class="input-group">
+              <div class="input-group" name="user_message">
                 <label for="message"
                   >Your message <i class="fa-solid fa-asterisk"></i
                 ></label>
@@ -372,7 +372,7 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- End of Contact -->
 
       <!-- Footer -->
@@ -392,6 +392,6 @@
       <!-- End of Footer -->
     </div>
     <!--End of container-->
-    <script src="index.js"></script>
+    <script src="public/index.js"></script>
   </body>
 </html>
