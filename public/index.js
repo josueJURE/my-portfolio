@@ -17,26 +17,6 @@ menuIcon.addEventListener("click", () => {
   console.log("clicked");
 });
 
-// textarea.addEventListener("input", (e) => {
-//   console.log(e.target.value);
-// });
-
-
-// const user_inputs = [...inputs];
-
-// user_inputs.forEach(function(element) {
-//     element.addEventListener("input", (event) => {
-//         emailObject = {
-//             name: form.querySelector('input[name="name"]').value,
-//             email: form.querySelector('input[name="email"]').value,
-//             subject: form.querySelector('input[name="subject"]').value,
-//             message: form.querySelector('textarea[name="message"]').value
-//         };
-//         console.log(event.target.value)
-       
-//     });
-   
-// });
 
 contactBtn.addEventListener("click", () => {
  
