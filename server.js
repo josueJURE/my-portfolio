@@ -23,7 +23,7 @@ app.post("/", (req, res) => {
     to: process.env.to, // list of receivers
     subject: subject,// Subject line
     text: `Hi my name is ${name}. ${message}. You can email me at ${email}`, // plain text body
-    html: message, // html body
+    // html: message, // html body
   };
 
   // async..await is not allowed in global scope, must use a wrapper
