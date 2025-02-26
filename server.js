@@ -22,7 +22,7 @@ app.post("/", (req, res) => {
     // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
     to: process.env.to, // list of receivers
     subject: subject,// Subject line
-    text: `${message}, feel free to email me at ${email}`, // plain text body
+    text: `Hi my name is ${name}. ${message}. You can email me at ${email}`, // plain text body
     html: message, // html body
   };
 
