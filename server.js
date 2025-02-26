@@ -9,24 +9,18 @@ app.use(express.urlencoded({ extended: true }));
 
 app.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
-  console.log("user email", email)
-  console.log(req.body);
-  console.log(` body request ${name} and user email ${email}`);
-
   const transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
-    port: 587,
-    secure: false, // true for port 465, false for other ports
+    service: "yahoo",
     auth: {
-      user: "maddison53@ethereal.email",
-      pass: "jn7jnAPss4f63QBp6D",
+      user: process.env.from,
+      pass: process.env.third_party_app_password,
     },
   });
 
   const emailObject = {
-    from: email,
+    from: process.env.from,
     // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
-    to: "<josue.jure@yahoo.com>", // list of receivers
+    to: process.env.to, // list of receivers
     subject: subject, // Subject line
     text: message, // plain text body
     html: message, // html body
@@ -48,3 +42,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${3000}`);
 });
+
