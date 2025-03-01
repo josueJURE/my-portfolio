@@ -17,13 +17,40 @@ app.post("/", (req, res) => {
     },
   });
 
+  const emailDocument = `
+  <html>
+    <head>
+      <style>
+        .preserve-line-breaks {
+          white-space: pre-line
+        }
+        .user-img {
+          width: 200px;
+          height: 200px;
+        }
+      </style>
+    </head>
+    <body class="preserve-line-breaks" >
+           <br />
+    ${message} 
+           <br />
+    You can email me at ${email}. 
+           <br />
+    Regards 
+            <br />
+    ${name}
+    
+    </body>
+  </html>
+`;
+
   const emailObject = {
     from: process.env.from,
     // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
     to: process.env.to, // list of receivers
-    subject: subject,// Subject line
-    text: `Hi my name is ${name}. ${message}. You can email me at ${email}`, // plain text body
-    // html: message, // html body
+    subject: subject, // Subject line
+    // text: `Hi my name is ${name}. ${message}. You can email me at ${email}`, // plain text body
+    html: emailDocument, // html body
   };
 
   // async..await is not allowed in global scope, must use a wrapper
@@ -42,4 +69,3 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${3000}`);
 });
-
