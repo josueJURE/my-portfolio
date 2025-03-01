@@ -2,46 +2,37 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector(".menu-icon");
   const container = document.querySelector(".container");
   const textarea = document.querySelector("textarea");
-  const inputs = Array.from(document.querySelectorAll(".input-group"));
-  // const inputs = document.querySelectorAll(".input-group");
+  // const inputs = Array.from(document.querySelectorAll(".input-group"));
+
+  const inputs = document.querySelectorAll("input");
   const contactBtn = document.querySelector(".contact-btn");
   const form = document.querySelector("form");
-
-  console.log(contactBtn);
-
-  console.log(textarea);
 
   menuIcon.addEventListener("click", () => {
     container.classList.toggle("change");
     console.log("clicked");
   });
 
-  contactBtn.addEventListener("click", (e) => {
+  form.addEventListener("submit", async (e) => {
     // e.preventDefault();
-    alert("Your message has been sent to Josue Jure");
+
+    // const formData = new FormData(form);
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("http://localhost:3000/", {
+        method: "POST",
+        body: formData,
+      });
+      if (response.ok) {
+        alert("Your message has been sent to Josue Jure");
+      
+      } else {
+        alert("we failed to send your email. Please try again");
+      }
+    } catch (error) {
+      console.log("Error", error);
+      alert("An error occureed");
+    } 
   });
-
-})
-
-
-
-//   document.addEventListener("DOMContentLoaded", () => {
-//     const menuIcon = document.querySelector(".menu-icon");
-//     const contactBtn = document.querySelector(".contact-btn");
-
-//     if (menuIcon) {
-//         menuIcon.addEventListener("click", () => {
-//             console.log("clicked");
-//         });
-//     }
-
-//     if (contactBtn) {
-//         contactBtn.addEventListener("click", (event) => {
-//             event.preventDefault();
-//             alert("Your message has been sent to Josue Jure");
-//         });
-//     }
-// });
-
-
-
+});

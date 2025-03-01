@@ -56,11 +56,15 @@ app.post("/", (req, res) => {
   // async..await is not allowed in global scope, must use a wrapper
   async function main() {
     // send mail with defined transport object
+    // 1/03/25 see recipe for success/emails.js GitHub account line 63
     const info = await transporter.sendMail(emailObject);
 
     console.log("Message sent: %s", info.messageId);
     // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
   }
+
+
+
 
   main().catch(console.error);
 });
