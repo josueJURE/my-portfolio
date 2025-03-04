@@ -57,9 +57,16 @@ app.post("/", (req, res) => {
   async function main() {
     // send mail with defined transport object
     // 1/03/25 see recipe for success/emails.js GitHub account line 63
-    const info = await transporter.sendMail(emailObject);
+    try {
+      const info = await transporter.sendMail(emailObject);
 
-    console.log("Message sent: %s", info.messageId);
+      console.log("Message sent: %s", info.messageId);
+      res.status(200).send()
+    } catch {
+    
+      res.status(500).send({ error: "message not sent" })
+    }
+
     // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
   }
 
@@ -71,5 +78,5 @@ app.post("/", (req, res) => {
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server running on port ${3000}`);
+  console.log(`Server running on port ${port}`);
 });

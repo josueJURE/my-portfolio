@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   form.addEventListener("submit", async (e) => {
-    // e.preventDefault();
+    e.preventDefault();
 
     // const formData = new FormData(form);
-    const formData = new FormData(form);
+    const formData = new FormData(e.target);
 
     try {
       const response = await fetch("http://localhost:3000/", {
@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       if (response.ok) {
         alert("Your message has been sent to Josue Jure");
+        e.target.reset()
       
       } else {
         alert("we failed to send your email. Please try again");
