@@ -62,10 +62,20 @@ app.post("/", (req, res) => {
     // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
   }
 
+  if (res.status === 2000) {
+    res.send({message: "email sent"})
+  } else {
+    res.send({message: "something has gone wrong" })
+  }
+
+  
+
   main().catch(console.error);
 });
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server running on port ${3000}`);
+  console.log(`Server running on port ${port}`);
 });
+
+

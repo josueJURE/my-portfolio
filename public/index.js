@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   contactBtn.addEventListener("click", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     alert("Your message has been sent to Josue Jure");
   });
 
