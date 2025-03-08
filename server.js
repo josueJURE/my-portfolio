@@ -7,7 +7,7 @@ const nodemailer = require("nodemailer");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/", (req, res) => {
+app.post("/send-email", (req, res) => {
   const { name, email, subject, message } = req.body;
   const transporter = nodemailer.createTransport({
     service: "yahoo",
@@ -58,15 +58,26 @@ app.post("/", (req, res) => {
     // send mail with defined transport object
     const info = await transporter.sendMail(emailObject);
 
+    console.log(info)
+
     console.log("Message sent: %s", info.messageId);
+
+    if (info.response === "250 OK , completed") {
+      console.log("ok")
+      // res.send({message: "email sent"})
+      // res.json({message: "something went wrong"})
+      res.json({ success: true, message: "Email sent successfully" });
+      
+    } 
+    
+    else {
+      console.log("error")
+      res.status(500).json({ success: false, message: "Failed to send email" });
+    }
     // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
   }
 
-  if (res.status === 2000) {
-    res.send({message: "email sent"})
-  } else {
-    res.send({message: "something has gone wrong" })
-  }
+ 
 
   
 
