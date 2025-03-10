@@ -7,10 +7,9 @@ const nodemailer = require("nodemailer");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/"
-  , (req, res) => {
+app.post("/", (req, res) => {
   const { name, email, subject, message } = req.body;
-  console.log("backend server", req.body)
+  console.log("backend server", req.body);
   const transporter = nodemailer.createTransport({
     service: "yahoo",
     auth: {
@@ -62,7 +61,7 @@ app.post("/"
 
     const info = await transporter.sendMail(emailObject);
 
-    if (info.response === '250 OK , completed' ) {
+    if (info.response === "250 OK , completed") {
       // res.send("your email was sent")
       res.send(`
         <!DOCTYPE html>
@@ -70,10 +69,28 @@ app.post("/"
         <head>
           <title>Form Submission Response</title>
           <style>
+
+          * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: "Caveat", cursive;
+  font-family: "Onest", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Rowdies", cursive;
+}
+
+
            html, body {
           height: 100%;
-          margin: 0;
-          font-family: Arial, sans-serif;
+          font-size: 62.5%; /* 1rem equals 10px */
+           background: linear-gradient(#232932, #2c3138, #232932);
+          // margin: 0;
+          // font-family: Arial, sans-serif;
         }
 
          body {
@@ -83,44 +100,48 @@ app.post("/"
           background-color: #f4f4f4;
         }
             .container {
-              max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+          
+              width: 800px;
+              height: 500px;
               margin: 0 auto;
-              background: white;
+              background-color: #1d222a;
               padding: 20px;
               border-radius: 5px;
               box-shadow: 0 0 10px rgba(0,0,0,0.1);
             }
-            h1 {
-              color: #333;
+            h1, .success-message  {
+              font-size: 5rem;
+              width: 60rem;
+              margin: 4rem 0 2rem 0;
+              color: #29a587;
+              text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+              text-align: center;
+              
             }
-            .success-message {
-              color: green;
-              font-weight: bold;
-            }
+           
             .user-data {
               margin-top: 20px;
               padding: 15px;
               background: #f9f9f9;
-              border-left: 4px solid #4CAF50;
+              // border-left: 4px solid #4CAF50;
             }
+
+          
           </style>
         </head>
         <body>
           <div class="container">
-            <h1>Form Submission Successful</h1>
+            <h1> Dear ${name} your email has been sent successfully</h1>
             <p class="success-message">Thank you for your submission!</p>
             
-            <div class="user-data">
-              <h2>Received Data:</h2>
-              <p>Name: ${'Not provided'}</p>
-              <p>Email: ${'Not provided'}</p>
-              <!-- Add more fields as needed -->
-            </div>
           </div>
         </body>
         </html>
       `);
-
     }
     // try {
     //   const info = await transporter.sendMail(emailObject);
@@ -129,15 +150,12 @@ app.post("/"
     //   console.log(info)
     //   res.status(200).send()
     // } catch {
-    
+
     //   res.status(500).send({ error: "message not sent" })
     // }
 
     // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
   }
-
-
-
 
   main().catch(console.error);
 });
