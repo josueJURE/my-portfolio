@@ -46,23 +46,17 @@ app.post("/", (req, res) => {
 `;
 
   const emailObject = {
-    from: process.env.from,
-    // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
+    from: process.env.from, // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
     to: process.env.to, // list of receivers
     subject: subject, // Subject line
-    // text: `Hi my name is ${name}. ${message}. You can email me at ${email}`, // plain text body
     html: emailDocument, // html body
   };
 
   // async..await is not allowed in global scope, must use a wrapper
   async function main() {
-  
-
     const info = await transporter.sendMail(emailObject);
 
     if (info.response === "250 OK , completed") {
-   
-    
       res.send(`
         <!DOCTYPE html>
         <html>
@@ -71,26 +65,24 @@ app.post("/", (req, res) => {
           <style>
 
           * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  outline: none;
-  font-family: "Caveat", cursive;
-  font-family: "Onest", sans-serif;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Quicksand", sans-serif;
-  font-family: "Roboto", sans-serif;
-  font-family: "Rowdies", cursive;
-}
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          text-decoration: none;
+          outline: none;
+          font-family: "Caveat", cursive;
+          font-family: "Onest", sans-serif;
+          font-family: "Open Sans", sans-serif;
+          font-family: "Quicksand", sans-serif;
+          font-family: "Roboto", sans-serif;
+          font-family: "Rowdies", cursive;
+        }
 
 
-           html, body {
+          html, body {
           height: 100%;
           font-size: 62.5%; /* 1rem equals 10px */
-           background: linear-gradient(#232932, #2c3138, #232932);
-          // margin: 0;
-          // font-family: Arial, sans-serif;
+          background: linear-gradient(#232932, #2c3138, #232932);
         }
 
          body {
@@ -130,6 +122,25 @@ app.post("/", (req, res) => {
               // border-left: 4px solid #4CAF50;
             }
 
+          .project-btn {
+            width: calc(100% - 3rem);
+            height: 5rem;
+            background-color: rgb(41, 165, 135);
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 300;
+            font-family: "Rowdies", cursive;
+            letter-spacing: 0.2rem;
+            cursor: pointer;
+            border-width: 0.2rem;
+            border-style: solid;
+            border-color: rgb(187, 187, 187);
+            border-image: initial;
+            border-radius: 3rem;
+
+          }
+
           
           </style>
 
@@ -145,16 +156,13 @@ app.post("/", (req, res) => {
           <div class="container">
             <h1> Dear ${name} your email has been sent successfully</h1>
             <p class="success-message">Thank you for your submission!</p>
-            <p class="success-message">Thank you for your submission!</p>
-
-            <button onclick="redirectToHomePage()" type="button" class="project-btn">Button</button>
+            <button onclick="redirectToHomePage()" type="button" class="project-btn">Return to homepage</button>
             
           </div>
         </body>
         </html>
       `);
     }
- 
   }
 
   main().catch(console.error);
