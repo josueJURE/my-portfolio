@@ -110,7 +110,7 @@ app.post("/", (req, res) => {
               margin: 0 auto;
               background-color: #1d222a;
               padding: 20px;
-              border-radius: 5px;
+              border-radius: 1rem;
               box-shadow: 0 0 10px rgba(0,0,0,0.1);
             }
             h1, .success-message  {
