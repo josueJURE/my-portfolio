@@ -56,13 +56,13 @@ app.post("/", (req, res) => {
 
   // async..await is not allowed in global scope, must use a wrapper
   async function main() {
-    // send mail with defined transport object
-    // 1/03/25 see recipe for success/emails.js GitHub account line 63
+  
 
     const info = await transporter.sendMail(emailObject);
 
     if (info.response === "250 OK , completed") {
-      // res.send("your email was sent")
+   
+    
       res.send(`
         <!DOCTYPE html>
         <html>
@@ -132,29 +132,29 @@ app.post("/", (req, res) => {
 
           
           </style>
+
+          <script>
+            function redirectToHomePage() {
+             window.location.href = "/";
+            }
+          </script>
+
+
         </head>
         <body>
           <div class="container">
             <h1> Dear ${name} your email has been sent successfully</h1>
             <p class="success-message">Thank you for your submission!</p>
+            <p class="success-message">Thank you for your submission!</p>
+
+            <button onclick="redirectToHomePage()" type="button" class="project-btn">Button</button>
             
           </div>
         </body>
         </html>
       `);
     }
-    // try {
-    //   const info = await transporter.sendMail(emailObject);
-
-    //   console.log("Message sent: %s", info.messageId)
-    //   console.log(info)
-    //   res.status(200).send()
-    // } catch {
-
-    //   res.status(500).send({ error: "message not sent" })
-    // }
-
-    // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+ 
   }
 
   main().catch(console.error);

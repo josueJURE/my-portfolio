@@ -51,7 +51,21 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("clicked");
   });
 
-  
+  // form.addEventListener("submit", () => {
+  //   form.reset()
+  // })
 
+  // window.addEventListener('pageshow', (event) => {
+  //   // Check if the page is being loaded from cache (browser back/forward)
+  //   if (event.persisted) {
+  //     const form = document.querySelector("form");
+  //     if (form) {
+  //       form.reset();
+  //     }
+  //   }
+  // });
 
 });
+
+
+
