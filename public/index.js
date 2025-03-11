@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const menuIcon = document.querySelector(".menu-icon");
   const container = document.querySelector(".container");
-  const form = document.querySelector("form");
+
 
   menuIcon.addEventListener("click", () => {
     container.classList.toggle("change");
