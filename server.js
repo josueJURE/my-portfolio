@@ -122,7 +122,7 @@ app.post("/", (req, res) => {
               // border-left: 4px solid #4CAF50;
             }
 
-          .project-btn {
+          .return-to-homepage {
             width: calc(100% - 3rem);
             height: 5rem;
             background-color: rgb(41, 165, 135);
@@ -156,7 +156,7 @@ app.post("/", (req, res) => {
           <div class="container">
             <h1> Dear ${name} your email has been sent successfully</h1>
             <p class="success-message">Thank you for your submission!</p>
-            <button onclick="redirectToHomePage()" type="button" class="project-btn">Return to homepage</button>
+            <button onclick="redirectToHomePage()" type="button" class="return-to-homepage">Return to homepage</button>
             
           </div>
         </body>

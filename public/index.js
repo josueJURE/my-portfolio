@@ -1,3 +1,17 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuIcon = document.querySelector(".menu-icon");
+  const container = document.querySelector(".container");
+  const form = document.querySelector("form");
+
+  menuIcon.addEventListener("click", () => {
+    container.classList.toggle("change");
+    console.log("clicked");
+  });
+
+});
+
+// This code below uses a different approach and is kept for future reference
 // document.addEventListener("DOMContentLoaded", () => {
 //   const menuIcon = document.querySelector(".menu-icon");
 //   const container = document.querySelector(".container");
@@ -41,31 +55,6 @@
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  const menuIcon = document.querySelector(".menu-icon");
-  const container = document.querySelector(".container");
-  const form = document.querySelector("form");
-
-  menuIcon.addEventListener("click", () => {
-    container.classList.toggle("change");
-    console.log("clicked");
-  });
-
-  // form.addEventListener("submit", () => {
-  //   form.reset()
-  // })
-
-  // window.addEventListener('pageshow', (event) => {
-  //   // Check if the page is being loaded from cache (browser back/forward)
-  //   if (event.persisted) {
-  //     const form = document.querySelector("form");
-  //     if (form) {
-  //       form.reset();
-  //     }
-  //   }
-  // });
-
-});
 
 
 
