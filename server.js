@@ -7,65 +7,7 @@ const nodemailer = require("nodemailer");
 
 app.use(express.urlencoded({ extended: true }));
 
-app.post("/", (req, res) => {
-  try {
-    const { name, email, subject, message } = req.body;
-    console.log("backend server", req.body);
-    const transporter = nodemailer.createTransport({
-      service: "yahoo",
-      auth: {
-        user: process.env.from,
-        pass: process.env.third_party_app_password,
-      },
-    });
-  
-    const emailDocument = `
-    <html>
-      <head>
-        <style>
-          .preserve-line-breaks {
-            white-space: pre-line
-          }
-          .user-img {
-            width: 200px;
-            height: 200px;
-          }
-        </style>
-      </head>
-      <body class="preserve-line-breaks" >
-             <br />
-      ${message} 
-             <br />
-      You can email me at ${email}. 
-             <br />
-      Regards 
-              <br />
-      ${name}
-      
-      </body>
-    </html>
-  `;
-  
-    const emailObject = {
-      from: process.env.from, // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
-      to: process.env.to, // list of receivers
-      subject: subject, // Subject line
-      html: emailDocument, // html body
-    };
-  
-    // async..await is not allowed in global scope, must use a wrapper
-    async function main() {
-      const info = await transporter.sendMail(emailObject);
-  
-      if (info.response === "250 OK , completed") {
-        res.send(`
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>Form Submission Response</title>
-            <style>
-  
-            * {
+const htmlStyle = `* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -78,7 +20,6 @@ app.post("/", (req, res) => {
             font-family: "Roboto", sans-serif;
             font-family: "Rowdies", cursive;
           }
-  
   
             html, body {
             height: 100%;
@@ -140,9 +81,66 @@ app.post("/", (req, res) => {
               border-image: initial;
               border-radius: 3rem;
   
-            }
-  
-            
+            }`;
+
+app.post("/", (req, res) => {
+  try {
+    const { name, email, subject, message } = req.body;
+    console.log("backend server", req.body);
+    const transporter = nodemailer.createTransport({
+      service: "yahoo",
+      auth: {
+        user: process.env.from,
+        pass: process.env.third_party_app_password,
+      },
+    });
+
+    const emailDocument = `
+    <html>
+      <head>
+        <style>
+          .preserve-line-breaks {
+            white-space: pre-line
+          }
+          .user-img {
+            width: 200px;
+            height: 200px;
+          }
+        </style>
+      </head>
+      <body class="preserve-line-breaks" >
+             <br />
+      ${message} 
+             <br />
+      You can email me at ${email}. 
+             <br />
+      Regards 
+              <br />
+      ${name}
+      
+      </body>
+    </html>
+  `;
+
+    const emailObject = {
+      from: process.env.from, // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
+      to: process.env.to, // list of receivers
+      subject: subject, // Subject line
+      html: emailDocument, // html body
+    };
+
+    // async..await is not allowed in global scope, must use a wrapper
+    async function main() {
+      const info = await transporter.sendMail(emailObject);
+
+      if (info.response === "250 OK , completed") {
+        res.send(`
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <title>Form Submission Response</title>
+            <style>
+            ${htmlStyle}
             </style>
   
             <script>
@@ -165,14 +163,35 @@ app.post("/", (req, res) => {
         `);
       }
     }
+
+    main();
+  } catch (error) {
+    res.status(500).send(`<!DOCTYPE html>
+          <html>
+          <head>
+            <title>Form Submission Response</title>
+            <style>
+             ${htmlStyle}
+            </style>
   
-    main()
-  } catch(error) {
-    res.status(500).send("something has gone wrong, please try again later")
-
+            <script>
+              function redirectToHomePage() {
+               window.location.href = "/";
+              }
+            </script>
+  
+  
+          </head>
+          <body>
+            <div class="container">
+              <h1> Something has gone wrong, please try again later</h1>
+              <button onclick="redirectToHomePage()" type="button" class="return-to-homepage">Return to homepage</button>
+              
+            </div>
+          </body>
+          </html>`);
   }
-
-})
+});
 
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 3000;
