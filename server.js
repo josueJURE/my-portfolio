@@ -7,6 +7,7 @@ const nodemailer = require("nodemailer");
 
 app.use(express.urlencoded({ extended: true }));
 
+
 const htmlStyle = `* {
             margin: 0;
             padding: 0;
@@ -133,6 +134,7 @@ app.post("/", (req, res) => {
     async function main() {
       const info = await transporter.sendMail(emailObject);
 
+
       if (info.response === "250 OK , completed") {
         res.send(`
           <!DOCTYPE html>
@@ -191,6 +193,7 @@ app.post("/", (req, res) => {
           </body>
           </html>`);
   }
+
 });
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -198,3 +201,5 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
