@@ -1,4 +1,5 @@
 import "./App.css";
+import SkillsCard from "./components/SkillsCard";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <a href="#contact">Contact</a>
           </div>
         </nav>
-        // Navigation //landing
+        // Navigation //landing // Josue
         <section className="landing" id="about-me">
           <h1 className="section-bg-heading">Website showcase</h1>
           <div className="logo">
@@ -97,7 +98,8 @@ function App() {
             My <span>Skills</span>
           </h3>
           <div className="section-border"></div>
-          <div className="skills-cards">
+          {/* <div className="skills-cards">
+           
             <div className="skills-card">
               <div className="skill">
                 <span>HTML</span>
@@ -110,7 +112,7 @@ function App() {
                 a solid foundation for every project.
               </p>
               <div className="skills-card-progress"></div>
-            </div>
+            </div> 
             <div className="skills-card">
               <div className="skill">
                 <span>CSS</span>
@@ -186,7 +188,8 @@ function App() {
               </p>
               <div className="skills-card-progress"></div>
             </div>
-          </div>
+          </div> */}
+          <SkillsCard/>
         </section>
         // End of Skills // Projects
         <section className="projects" id="projects-section">
