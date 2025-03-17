@@ -1,6 +1,19 @@
 // import skillsArray from "./utilities/skillsArray"
 
-const skillsData = [
+import { JSX } from "react";
+
+
+// var array2: Array<boolean> =[false, false, false] 
+interface SkillItem {
+  skill: string;
+  percentage: string;
+  description: string;
+
+}
+
+type SkillDataType = SkillItem[]
+
+const skillsData : SkillDataType = [
   {
     skill: "HTML",
     percentage: "95%",
@@ -38,7 +51,7 @@ const skillsData = [
   }
 ];
 
-function SkillsCard() {
+function SkillsCard(): JSX.Element {
   return (
     <div className="skills-cards">
       {skillsData.map((item, index) => (
