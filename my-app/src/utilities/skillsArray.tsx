@@ -12,12 +12,12 @@ const skillsData: SkillsDataType = [
     {
       skill: "HTML",
       percentage: "95%",
-      description: "Mastery in HTML is the cornerstone of my web development journey. With over a year of self-teaching, I've honed my skills in creating clean, semantic, and well-structured HTML, ensuring a solid foundation for every project."
+      description: "Mastery in HTML is the cornerstone of my web development journey. With over a year of self-teaching, I've honed my skills in creating clean, semantic, and well-structured HTML."
     },
     {
       skill: "CSS",
       percentage: "90%",
-      description: "My CSS skills extends beyond styling; it's about creating visually appealing and responsive designs. Through self-guided learning, I've become adept at leveraging CSS to transform static layouts into engaging and user-friendly interfaces."
+      description: "My CSS skills extends beyond styling; it's about creating visually appealing and responsive designs. Through self-guided learning, I've become adept at leveraging CSS."
     },
     {
       skill: "JavaScript",
@@ -32,7 +32,7 @@ const skillsData: SkillsDataType = [
     {
       skill: "Node.js and Express",
       percentage: "85%",
-      description: "The dynamic duo of Node.js and Express has revolutionized my web development workflow. With Node.js as the backbone, I can leverage JavaScript's versatility on the server-side, unlocking a seamless coding experience."
+      description: "The dynamic duo of Node.js and Express has revolutionized my web development workflow. With Node.js as the backbone, I can leverage JavaScript's versatility on the server-side."
     },
     {
       skill: "ChatGPT OpenAI API",
@@ -42,7 +42,7 @@ const skillsData: SkillsDataType = [
     {
       skill: "React",
       percentage: "50%",
-      description: "Since starting to volunteer with CAFOD, I've learned a lot more about React and React hooks such as useContext. I've also been exposed to React libraries and frameworks such as Next.js and Shadcn, respectively"
+      description: "Since starting to volunteer with CAFOD, I've learned a lot more about React and React hooks such as useContext. I've also been exposed to React libraries and frameworks such as Next.js"
     }
   ];
 
