@@ -1,4 +1,14 @@
-const skillsData = [
+interface SkillItem {
+  skill: string;
+  percentage: string;
+  description: string;
+}
+
+// Type for the entire array
+type SkillsDataType = SkillItem[];
+
+
+const skillsData: SkillsDataType = [
     {
       skill: "HTML",
       percentage: "95%",
