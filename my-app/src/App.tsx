@@ -189,7 +189,7 @@ function App() {
               <div className="skills-card-progress"></div>
             </div>
           </div> */}
-          <SkillsCard/>
+          <SkillsCard />
         </section>
         // End of Skills // Projects
         <section className="projects" id="projects-section">
@@ -200,10 +200,6 @@ function App() {
           </h3>
           <div className="projects-cards">
             <div className="project-card">
-              <div className="project-img">
-                <img src="images/project2.png" />
-              </div>
-
               <video src="video/recipe_app_video.mp4" controls></video>
               <div className="techs">
                 <span>recorded by my co-developer</span>
@@ -211,7 +207,7 @@ function App() {
                 <span>HTML,</span>
                 <span>CSS</span>
               </div>
-              <h3 className="project-name">ChatGPT recipe-app video</h3>
+              <h3 className="project-name">ChatGPT recipe-app videos</h3>
 
               <p className="project-desc">
                 After completing my 12-week bootcamp, one of my classmates and I
