@@ -322,9 +322,6 @@ function App() {
                 <i className="fa-sharp fa-solid fa-arrow-right"></i>
               </button>
             </div>
-            <button type="button" className="btn">
-              <a href="https://github.com/josueJURE">View more</a>
-            </button>
           </div>
           <div className="section-border"></div>
         </section>
