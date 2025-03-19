@@ -1,6 +1,7 @@
 import "./App.css";
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
+import ContactLeft from "./components/ContactLeft";
 
 function App() {
   return (
@@ -114,36 +115,8 @@ function App() {
           </h3>
           <div className="section-border"></div>
           <div className="contact-content">
-            <div className="contact-left">
-              <div className="address">
-                <i className="fa-solid fa-location-dot"></i>
-                <div className="contact-info">
-                  <span>Address</span>
-                  <span>London, UK</span>
-                </div>
-              </div>
-              <div className="freelance">
-                <i className="fa-regular fa-user"></i>
-                <div className="contact-info">
-                  <span>Developer</span>
-                  <span>Available Right Now</span>
-                </div>
-              </div>
-              <div className="email">
-                <i className="fa-regular fa-envelope"></i>
-                <div className="contact-info">
-                  <span>Email</span>
-                  <span>josue.jure@gmail.com</span>
-                </div>
-              </div>
-              <div className="phone">
-                <i className="fa-solid fa-phone"></i>
-                <div className="contact-info">
-                  <span>Phone</span>
-                  <span>+7887399922</span>
-                </div>
-              </div>
-            </div>
+            <ContactLeft/>
+        
             <div className="contact-right">
               <form action="/" method="POST">
                 <div className="input-groups">
