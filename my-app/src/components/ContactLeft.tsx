@@ -7,7 +7,7 @@ function ContactLeft() {
       <div className="contact-left">
       {contactLeftData.map((item, index) => (
       
-          <div className={item.classNameDiv}>
+          <div className={item.classNameDiv} key={index}>
             <i className={item.classNameIcon}></i>
             <div className="contact-info">
               <span>{item.span}</span>
