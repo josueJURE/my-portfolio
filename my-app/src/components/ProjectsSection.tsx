@@ -18,11 +18,9 @@ function ProjectsSection() {
             )}
 
             <div className="techs">
-              <span>{item.skill1}</span>
-              <span>{item.skill2}</span>
-              <span>{item.skill3}</span>
-              {/* <span>CSS</span> */}
+              <span>{item.skills}</span>
             </div>
+
             <h3 className="project-name">{item.projectName}</h3>
 
             <p className="project-desc">{item.projectDescription}</p>
