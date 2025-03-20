@@ -1,24 +1,11 @@
-
+import InputGroups from "./InputGroups";
 
 function ContactRight() {
   return (
     <>
       <div className="contact-right">
         <form action="/" method="POST">
-          <div className="input-groups">
-            <div className="input-group">
-              <label htmlFor="name">
-                Your full name <i className="fa-solid fa-asterisk"></i>
-              </label>
-              <input type="text" name="name" required />
-            </div>
-            <div className="input-group">
-              <label htmlFor="email">
-                Your email address <i className="fa-solid fa-asterisk"></i>
-              </label>
-              <input type="email" name="email" required />
-            </div>
-          </div>
+        <InputGroups/>
           <div className="input-group">
             <label htmlFor="subject">
               Your subject <i className="fa-solid fa-asterisk"></i>
