@@ -14,7 +14,12 @@ function ProjectsSection() {
             {item.image_video === "video/recipe_app_video.mp4" ? (
               <video src={item.image_video} controls></video>
             ) : (
-              <img src={item.image_video} />
+              <div className="project-img">
+
+
+                <img src={item.image_video} />
+
+              </div>
             )}
 
             <div className="techs">
