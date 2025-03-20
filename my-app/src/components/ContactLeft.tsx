@@ -1,5 +1,6 @@
 
 import contactLeftData from "../utilities/ContactLeftData";
+// import "/App.css";
 
 function ContactLeft() {
   return (
