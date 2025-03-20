@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        // Navigation
+        {/* // Navigation */}
         <div className="menu-icon">
           <div className="line line-1"></div>
           <div className="line line-2"></div>
@@ -22,7 +22,7 @@ function App() {
             <a href="#contact">Contact</a>
           </div>
         </nav>
-        // Navigation //landing // Josue
+        {/* // Navigation //landing // Josue */}
         <section className="landing" id="about-me">
           <h1 className="section-bg-heading">Website showcase</h1>
           <div className="logo">
@@ -93,7 +93,7 @@ function App() {
             </div>
           </div>
         </section>
-        // End of landing // Skills
+        {/* // End of landing // Skills */}
         <section className="skills" id="skills">
           <h1 className="section-bg-heading">My Skills</h1>
           <h1 className="section-heading">Professional Skills</h1>
@@ -104,10 +104,10 @@ function App() {
           
           <SkillsCard />
         </section>
-        // End of Skills // Projects
+        {/* // End of Skills // Projects */}
      
         <ProjectsSection/>
-        // End of Projects // Contact
+        {/* // End of Projects // Contact */}
         <section className="contact" id="contact">
           <h1 className="section-bg-heading">Contact Me</h1>
           <h1 className="section-heading">Contact</h1>
@@ -120,7 +120,7 @@ function App() {
             <ContactRight/>
           </div>
         </section>
-        // End of Contact // Footer
+        {/* // End of Contact // Footer */}
         <footer className="footer">
           <div className="icons">
             <i className="fa-brands fa-facebook-f"></i>
@@ -136,7 +136,7 @@ function App() {
             </p>
           </div>
         </footer>
-        // End of Footer
+        {/* // End of Footer */}
       </div>
     </div>
   );
