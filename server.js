@@ -141,6 +141,7 @@ app.post("/", (req, res) => {
           <html>
           <head>
             <title>Form Submission Response</title>
+            <link href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=Onest:wght@300&amp;family=Open+Sans:ital,wght@1,300&amp;family=Quicksand:wght@300;400;500;600;700&amp;family=Roboto:wght@300&amp;family=Rowdies&amp;display=swap" rel="stylesheet">
             <style>
             ${htmlStyle}
             </style>
