@@ -24,7 +24,8 @@
     "build": "vite build",
     "server": "vite preview",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "dev": "nodemon server.js"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
+    "nodemon": "^3.1.9",
     "typescript": "^3.4.5",
     "vite": "^6.2.3"
   }

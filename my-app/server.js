@@ -7,6 +7,8 @@ const nodemailer = require("nodemailer");
 // const cors = require('cors'); //Add this line
 // app.use(cors()); //Add this line
 
+
+
 app.use(express.urlencoded({ extended: true }));
 
 
@@ -201,11 +203,16 @@ app.post("/", (req, res) => {
 
 });
 
+// This should be after all your other routes
+
+
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
+
+
 
 
 // app.use(express.static(path.join(__dirname, "public")));

@@ -1,3 +1,4 @@
+import React from 'react';
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
