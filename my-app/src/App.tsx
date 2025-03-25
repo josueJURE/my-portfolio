@@ -1,4 +1,3 @@
-
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
@@ -44,10 +43,10 @@ function App() {
               <p className="about">
                 After completing a 12-week bootcamp, building various personal
                 projects, including a full-stack application that integrates the
-                OpenAI API, I am now volunteering as a software developer for a
-                charity to gain valuable experience and do some good. I'm
-                learning a lot from the mid-level developer I'm working with. I
-                also volunteer as a software coach at Codebar, a charity
+                OpenAI API, I am now volunteering as a software developer
+                htmlFor a charity to gain valuable experience and do some good.
+                I'm learning a lot from the mid-level developer I'm working
+                with. I also volunteer as a software coach at Codebar, a charity
                 supporting aspiring developers. Having to articulate my thoughts
                 has made me a better communicator and has also deepened my
                 understanding of some programming concepts. Have a look at my
@@ -101,12 +100,12 @@ function App() {
             My <span>Skills</span>
           </h3>
           <div className="section-border"></div>
-          
+
           <SkillsCard />
         </section>
         {/* // End of Skills // Projects */}
-     
-        <ProjectsSection/>
+
+        <ProjectsSection />
         {/* // End of Projects // Contact */}
         <section className="contact" id="contact">
           <h1 className="section-bg-heading">Contact Me</h1>
@@ -116,8 +115,40 @@ function App() {
           </h3>
           <div className="section-border"></div>
           <div className="contact-content">
-            <ContactLeft/>
-            <ContactRight/>
+            <ContactLeft />
+            {/* <ContactRight/> */}
+          
+            <form action="http://localhost:4000/" method="POST">
+              <div className="input-groups">
+                <div className="input-group">
+                  <label htmlFor="name">
+                    Your full name <i className="fa-solid fa-asterisk"></i>
+                  </label>
+                  <input type="text" name="name" required />
+                </div>
+                <div className="input-group">
+                  <label htmlFor="email">
+                    Your email address <i className="fa-solid fa-asterisk"></i>
+                  </label>
+                  <input type="email" name="email" required />
+                </div>
+              </div>
+              <div className="input-group">
+                <label htmlFor="subject">
+                  Your subject <i className="fa-solid fa-asterisk"></i>
+                </label>
+                <input type="text" name="subject" required />
+              </div>
+              <div className="input-group">
+                <label htmlFor="message">
+                  Your message <i className="fa-solid fa-asterisk"></i>
+                </label>
+                <textarea name="message" required></textarea>
+              </div>
+              <button type="submit" className="contact-btn">
+                Send Message
+              </button>
+            </form>
           </div>
         </section>
         {/* // End of Contact // Footer */}

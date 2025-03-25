@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json());
 const path = require("path");
 const nodemailer = require("nodemailer");
+// const cors = require('cors'); //Add this line
+// app.use(cors()); //Add this line
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -85,8 +87,10 @@ const htmlStyle = `* {
             }`;
 
 app.post("/", (req, res) => {
+  // res.send("POST request received!");
   try {
     const { name, email, subject, message } = req.body;
+
     console.log("backend server", req.body);
     const transporter = nodemailer.createTransport({
       service: "yahoo",
@@ -198,9 +202,11 @@ app.post("/", (req, res) => {
 });
 
 app.use(express.static(path.join(__dirname, "public")));
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
+
+// app.use(express.static(path.join(__dirname, "public")));
 
