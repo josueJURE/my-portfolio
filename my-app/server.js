@@ -4,8 +4,8 @@ const app = express();
 app.use(express.json());
 const path = require("path");
 const nodemailer = require("nodemailer");
-// const cors = require('cors'); //Add this line
-// app.use(cors()); //Add this line
+const cors = require('cors'); //Add this line
+app.use(cors()); //Add this line
 
 
 
@@ -207,7 +207,7 @@ app.post("/", (req, res) => {
 
 
 app.use(express.static(path.join(__dirname, "public")));
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 4001;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

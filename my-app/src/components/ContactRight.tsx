@@ -1,13 +1,13 @@
+import React from "react";
 import InputGroups from "./InputGroups";
 
 function ContactRight() {
   return (
     <>
       <div className="contact-right">
-      
-   
-      <form action="/" method="POST">
-        <InputGroups/>
+        <form action="http://localhost:4001" method="POST">
+          <InputGroups />
+
           <div className="input-group">
             <label htmlFor="subject">
               Your subject <i className="fa-solid fa-asterisk"></i>
