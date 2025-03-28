@@ -3,16 +3,15 @@ import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
 import ContactRight from "./components/ContactRight";
+import MenuIcon from './components/MenuIcon';
 
 function App() {
   return (
     <div className="App">
       <div className="container">
         {/* // Navigation */}
-        <div className="menu-icon">
-          <div className="line line-1"></div>
-          <div className="line line-2"></div>
-        </div>
+        <MenuIcon/>
+     
         <nav className="navigation">
           <div className="section-border"></div>
           <div className="nav-items">

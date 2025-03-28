@@ -204,6 +204,13 @@ app.post("/", (req, res) => {
 });
 
 // This should be after all your other routes
+// Serve your React app's index.html for all other GET requests
+app.use(express.static(path.join(__dirname, 'dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+});
+
+
 
 
 app.use(express.static(path.join(__dirname, "public")));
