@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
@@ -6,11 +6,18 @@ import ContactRight from "./components/ContactRight";
 import MenuIcon from './components/MenuIcon';
 
 function App() {
+
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  // handleMenuToggle  can be rewritten as a function
+  const handleMenuToggle = (isOpen: boolean) => {
+    setMenuOpen(isOpen)
+  }
   return (
-    <div className="App">
+    <div className={`App ${menuOpen ? 'change' : ''}`}>
       <div className="container">
         {/* // Navigation */}
-        <MenuIcon/>
+        <MenuIcon onToggle={handleMenuToggle}/>
      
         <nav className="navigation">
           <div className="section-border"></div>

@@ -4,92 +4,92 @@ const app = express();
 app.use(express.json());
 const path = require("path");
 const nodemailer = require("nodemailer");
-const cors = require('cors'); //Add this line
+const cors = require("cors"); //Add this line
 app.use(cors()); //Add this line
-
-
+const { emailTemplate, confirmationMessage, sendErrorMessage} = require("./utilities/functions.js");
+const htmlStyle = require("./utilities/htmlStyle.js");
 
 app.use(express.urlencoded({ extended: true }));
 
+//             padding: 0;
+//             box-sizing: border-box;
+//             text-decoration: none;
+//             outline: none;
+//             font-family: "Caveat", cursive;
+//             font-family: "Onest", sans-serif;
+//             font-family: "Open Sans", sans-serif;
+//             font-family: "Quicksand", sans-serif;
+//             font-family: "Roboto", sans-serif;
+//             font-family: "Rowdies", cursive;
+//           }
 
-const htmlStyle = `* {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            outline: none;
-            font-family: "Caveat", cursive;
-            font-family: "Onest", sans-serif;
-            font-family: "Open Sans", sans-serif;
-            font-family: "Quicksand", sans-serif;
-            font-family: "Roboto", sans-serif;
-            font-family: "Rowdies", cursive;
-          }
-  
-            html, body {
-            height: 100%;
-            font-size: 62.5%; /* 1rem equals 10px */
-            background: linear-gradient(#232932, #2c3138, #232932);
-          }
-  
-           body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f4f4f4;
-          }
-              .container {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center
-            
-                width: 800px;
-                height: 500px;
-                margin: 0 auto;
-                background-color: #1d222a;
-                padding: 20px;
-                border-radius: 1rem;
-                box-shadow: 0 0 10px rgba(0,0,0,0.1);
-              }
-              h1, .success-message  {
-                font-size: 5rem;
-                width: 60rem;
-                margin: 4rem 0 2rem 0;
-                color: #29a587;
-                text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
-                text-align: center;
-                
-              }
-             
-              .user-data {
-                margin-top: 20px;
-                padding: 15px;
-                background: #f9f9f9;
-                // border-left: 4px solid #4CAF50;
-              }
-  
-            .return-to-homepage {
-              width: calc(100% - 3rem);
-              height: 5rem;
-              background-color: rgb(41, 165, 135);
-              color: rgb(255, 255, 255);
-              text-transform: uppercase;
-              font-size: 1.6rem;
-              font-weight: 300;
-              font-family: "Rowdies", cursive;
-              letter-spacing: 0.2rem;
-              cursor: pointer;
-              border-width: 0.2rem;
-              border-style: solid;
-              border-color: rgb(187, 187, 187);
-              border-image: initial;
-              border-radius: 3rem;
-  
-            }`;
+//             html, body {
+//             height: 100%;
+//             font-size: 62.5%; /* 1rem equals 10px */
+//             background: linear-gradient(#232932, #2c3138, #232932);
+//           }
+
+//            body {
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             background-color: #f4f4f4;
+//           }
+//               .container {
+//               display: flex;
+//               flex-direction: column;
+//               justify-content: center;
+//               align-items: center
+
+//                 width: 800px;
+//                 height: 500px;
+//                 margin: 0 auto;
+//                 background-color: #1d222a;
+//                 padding: 20px;
+//                 border-radius: 1rem;
+//                 box-shadow: 0 0 10px rgba(0,0,0,0.1);
+//               }
+//               h1, .success-message  {
+//                 font-size: 5rem;
+//                 width: 60rem;
+//                 margin: 4rem 0 2rem 0;
+//                 color: #29a587;
+//                 text-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+//                 text-align: center;
+
+//               }
+
+//               .user-data {
+//                 margin-top: 20px;
+//                 padding: 15px;
+//                 background: #f9f9f9;
+//                 // border-left: 4px solid #4CAF50;
+//               }
+
+//             .return-to-homepage {
+//               width: calc(100% - 3rem);
+//               height: 5rem;
+//               background-color: rgb(41, 165, 135);
+//               color: rgb(255, 255, 255);
+//               text-transform: uppercase;
+//               font-size: 1.6rem;
+//               font-weight: 300;
+//               font-family: "Rowdies", cursive;
+//               letter-spacing: 0.2rem;
+//               cursor: pointer;
+//               border-width: 0.2rem;
+//               border-style: solid;
+//               border-color: rgb(187, 187, 187);
+//               border-image: initial;
+//               border-radius: 3rem;
+
+//             }`;
 
 app.post("/", (req, res) => {
-  // res.send("POST request received!");
+  console.log(
+    `${req.method} ${req.protocol}://${req.get("host")}${req.originalUrl}`
+  );
+
   try {
     const { name, email, subject, message } = req.body;
 
@@ -102,32 +102,33 @@ app.post("/", (req, res) => {
       },
     });
 
-    const emailDocument = `
-    <html>
-      <head>
-        <style>
-          .preserve-line-breaks {
-            white-space: pre-line
-          }
-          .user-img {
-            width: 200px;
-            height: 200px;
-          }
-        </style>
-      </head>
-      <body class="preserve-line-breaks" >
-             <br />
-      ${message} 
-             <br />
-      You can email me at ${email}. 
-             <br />
-      Regards 
-              <br />
-      ${name}
-      
-      </body>
-    </html>
-  `;
+    //   <html>
+    //     <head>
+    //       <style>
+    //         .preserve-line-breaks {
+    //           white-space: pre-line
+    //         }
+    //         .user-img {
+    //           width: 200px;
+    //           height: 200px;
+    //         }
+    //       </style>
+    //     </head>
+    //     <body class="preserve-line-breaks" >
+    //            <br />
+    //     ${message}
+    //            <br />
+    //     You can email me at ${email}.
+    //            <br />
+    //     Regards
+    //             <br />
+    //     ${name}
+
+    //     </body>
+    //   </html>
+    // `;
+
+    const emailDocument = emailTemplate(message, email, name);
 
     const emailObject = {
       from: process.env.from, // from: '"Maddison Foo Koch 👻" <maddison53@ethereal.email>', // sender address
@@ -140,78 +141,23 @@ app.post("/", (req, res) => {
     async function main() {
       const info = await transporter.sendMail(emailObject);
 
-
       if (info.response === "250 OK , completed") {
-        res.send(`
-          <!DOCTYPE html>
-          <html>
-          <head>
-            <title>Form Submission Response</title>
-            <link href="https://fonts.googleapis.com/css2?family=Caveat&amp;family=Onest:wght@300&amp;family=Open+Sans:ital,wght@1,300&amp;family=Quicksand:wght@300;400;500;600;700&amp;family=Roboto:wght@300&amp;family=Rowdies&amp;display=swap" rel="stylesheet">
-            <style>
-            ${htmlStyle}
-            </style>
-  
-            <script>
-              function redirectToHomePage() {
-               window.location.href = "/";
-              }
-            </script>
-  
-  
-          </head>
-          <body>
-            <div class="container">
-              <h1> Dear ${name} your email has been sent successfully</h1>
-              <p class="success-message">Thank you for your submission!</p>
-              <button onclick="redirectToHomePage()" type="button" class="return-to-homepage">Return to homepage</button>
-              
-            </div>
-          </body>
-          </html>
-        `);
+        res.status(200).send(confirmationMessage(htmlStyle, name));
       }
     }
 
     main();
   } catch (error) {
-    res.status(500).send(`<!DOCTYPE html>
-          <html>
-          <head>
-            <title>Form Submission Response</title>
-            <style>
-             ${htmlStyle}
-            </style>
-  
-            <script>
-              function redirectToHomePage() {
-               window.location.href = "/";
-              }
-            </script>
-  
-  
-          </head>
-          <body>
-            <div class="container">
-              <h1> Something has gone wrong, please try again later</h1>
-              <button onclick="redirectToHomePage()" type="button" class="return-to-homepage">Return to homepage</button>
-              
-            </div>
-          </body>
-          </html>`);
+    res.status(500).send(sendErrorMessage(htmlStyle));
   }
-
 });
 
 // This should be after all your other routes
 // Serve your React app's index.html for all other GET requests
-app.use(express.static(path.join(__dirname, 'dist')));
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+app.use(express.static(path.join(__dirname, "dist")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
-
-
-
 
 app.use(express.static(path.join(__dirname, "public")));
 const port = process.env.PORT || 4001;
@@ -219,8 +165,4 @@ app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
 
-
-
-
 // app.use(express.static(path.join(__dirname, "public")));
-
