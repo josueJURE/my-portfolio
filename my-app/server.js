@@ -11,6 +11,11 @@ const htmlStyle = require("./utilities/htmlStyle.js");
 
 app.use(express.urlencoded({ extended: true }));
 
+const {PrismaClient} = require('@prisma/client');
+const prisma = new PrismaClient();
+
+
+
 
 
 app.post("/", (req, res) => {
@@ -19,7 +24,7 @@ app.post("/", (req, res) => {
   );
 
   try {
-    const { name, email, subject, message } = req.body;
+    const {name, email, subject, message } = req.body;
 
     console.log("backend server", req.body);
     const transporter = nodemailer.createTransport({
@@ -51,10 +56,43 @@ app.post("/", (req, res) => {
     }
 
     main();
+
+    async function createUser(param1, param2, param3, param4) {
+      const user = await prisma.user.create({
+        data: {
+          fullName: param1,
+          email: param2,
+          subject: param3,
+          message: param4,
+        },
+      });
+      console.log("User created:", user);
+    }
+
+   
+    createUser( name, email, subject, message)
+      .then(async() => {
+        await prisma.$disconnect();
+        console.log("User created successfully");
+      })
+      .catch(async(error) => {
+        console.error("Error creating user:", error);
+        await prisma.$disconnect();
+        process.exit(1);
+      });
+
+
+
+
   } catch (error) {
     res.status(500).send(sendErrorMessage(htmlStyle));
   }
+
 });
+
+
+
+
 
 // This should be after all your other routes
 // Serve your React app's index.html for all other GET requests
