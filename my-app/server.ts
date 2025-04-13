@@ -12,8 +12,6 @@ const {
   sendErrorMessage,
 } = require("./utilities/functions.js");
 
-// Ensure confirmationMessage is a function
-
 const htmlStyle = require("./utilities/htmlStyle.js");
 
 app.use(express.urlencoded({ extended: true }));
