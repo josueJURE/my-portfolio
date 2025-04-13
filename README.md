@@ -1,33 +1,52 @@
+# Getting Started with Create React App
 
-# Website Navigation Menu Toggle
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+
+## Available Scripts
+
+josuejure.github.io/my-portfolio/
 
 ## Overview
 
-This is a simple JavaScript code that toggles a navigation menu on a website when clicking on a menu icon. 
 
-## Functionality
+In the project directory, you can run:
 
-- Selects the menu icon element and the container element using querySelector
-- Adds a click event listener to the menu icon 
-- When clicked, it toggles the "change" class on the container element
+### `npm start`
 
-## How it works
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- The "change" class applies CSS styling that transforms the navigation menu to toggle open and closed
-- Toggling the class on each click shows/hides the menu
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-## Customization
+### `npm test`
 
-- Update the querySelector strings to match the class names on elements in your HTML
-- Adjust the CSS styles referenced by the "change" class to control menu animations/transitions
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Dependencies
+### `npm run build`
 
-- None, plain JavaScript only
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Use Cases
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Mobile navigation menus that open/close 
-- Hiding/showing elements on a page through toggle interactions
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Let me know if you have any other questions!
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
