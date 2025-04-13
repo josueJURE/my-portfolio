@@ -1,0 +1,40 @@
+
+
+https://www.prisma.io/docs/orm/overview/introduction/data-modeling
+
+When using TypeScript, you might define an interface instead:
+
+
+interface User {
+  user_id: number
+  name: string
+  email: string
+  isAdmin: boolean
+}
+
+* command to see prisma db: npx prisma studio
+
+1 - For development workflow:
+
+Run both frontend and backend: npm run dev
+
+Or run separately:
+
+Frontend: npm run frontend
+
+Backend: npm run backend
+
+2 - For production:
+
+npm run build          # Build frontend
+npm run build:backend  # Build backend
+npm run backend:prod   # Start production server
+
+
+
+
+
+
+
+
+
