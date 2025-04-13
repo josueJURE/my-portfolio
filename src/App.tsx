@@ -1,0 +1,151 @@
+import React, { useState } from 'react';
+import SkillsCard from "./components/SkillsCard";
+import ProjectsSection from "./components/ProjectsSection";
+import ContactLeft from "./components/ContactLeft";
+import ContactRight from "./components/ContactRight";
+import MenuIcon from './components/MenuIcon';
+
+function App() {
+
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
+  // handleMenuToggle  can be rewritten as a function
+  const handleMenuToggle = (isOpen: boolean) => {
+    setMenuOpen(isOpen)
+  }
+  return (
+    <div className={`App ${menuOpen ? 'change' : ''}`}>
+      <div className="container">
+        {/* // Navigation */}
+        <MenuIcon onToggle={handleMenuToggle}/>
+     
+        <nav className="navigation">
+          <div className="section-border"></div>
+          <div className="nav-items">
+            <a href="#about-me">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects-section">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+        {/* // Navigation //landing // Josue */}
+        <section className="landing" id="about-me">
+          <h1 className="section-bg-heading">Website showcase</h1>
+          <div className="logo">
+            <span>Web</span>
+            <span>Dev</span>
+          </div>
+          <div className="banner">
+            <div className="section-border"></div>
+            <div className="developer-info">
+              <h3 className="greeting">
+                Hello, <span>my name is</span>
+              </h3>
+              <h1 className="name">
+                <span>Josue</span> Juré
+              </h1>
+              <h3 className="prof">
+                I am <span>a Web Developer</span>
+              </h3>
+              <p className="about">
+                After completing a 12-week bootcamp, building various personal
+                projects, including a full-stack application that integrates the
+                OpenAI API, I am now volunteering as a software developer
+                htmlFor a charity to gain valuable experience and do some good.
+                I'm learning a lot from the mid-level developer I'm working
+                with. I also volunteer as a software coach at Codebar, a charity
+                supporting aspiring developers. Having to articulate my thoughts
+                has made me a better communicator and has also deepened my
+                understanding of some programming concepts. Have a look at my
+                projects below, and then reach out to me!
+              </p>
+              <div className="social-media">
+                <a href="https://linkedin.com/in/josué-jure-3799b9127">
+                  <i className="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/josueJURE">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a href="https://codewars.com/users/josueJURE">
+                  <i className="">codewars</i>
+                </a>
+              </div>
+              <div className="cv">
+                <button className="btn cv-btn">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="./resume/CV.docx.pdf"
+                    download
+                  >
+                    Download CV
+                  </a>
+                </button>
+                <span>My Skill</span>
+              </div>
+            </div>
+            <div className="developer-img">
+              <div className="dev-img-wrapper">
+                <img src="images/me.jpg" alt="" />
+              </div>
+              <div className="dev-experience dev-work">
+                <span>10+</span>
+                <span>projects completed</span>
+              </div>
+              <div className="dev-projects dev-work">
+                <span>570+</span>
+                <span>Katas completed</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* // End of landing // Skills */}
+        <section className="skills" id="skills">
+          <h1 className="section-bg-heading">My Skills</h1>
+          <h1 className="section-heading">Professional Skills</h1>
+          <h3 className="sub-heading">
+            My <span>Skills</span>
+          </h3>
+          <div className="section-border"></div>
+
+          <SkillsCard />
+        </section>
+        {/* // End of Skills // Projects */}
+
+        <ProjectsSection />
+        {/* // End of Projects // Contact */}
+        <section className="contact" id="contact">
+          <h1 className="section-bg-heading">Contact Me</h1>
+          <h1 className="section-heading">Contact</h1>
+          <h3 className="sub-heading">
+            Let's <span>Have Some Talk</span>
+          </h3>
+          <div className="section-border"></div>
+          <div className="contact-content">
+            <ContactLeft />
+            <ContactRight/>
+          </div>
+        </section>
+        {/* // End of Contact // Footer */}
+        <footer className="footer">
+          <div className="icons">
+            <i className="fa-brands fa-facebook-f"></i>
+            <i className="fa-brands fa-instagram"></i>
+            <i className="fa-brands fa-twitter"></i>
+          </div>
+          <div className="copyright">
+            <p className="year"></p>
+          </div>
+          <div className="author">
+            <p>
+              Made with <span>Love & Passion</span>
+            </p>
+          </div>
+        </footer>
+        {/* // End of Footer */}
+      </div>
+    </div>
+  );
+}
+
+export default App;
