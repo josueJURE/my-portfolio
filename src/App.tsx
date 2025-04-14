@@ -7,8 +7,8 @@ import ContactRight from "./components/ContactRight";
 function App() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  function MenuIcon() {
-    setMenuOpen((prev: boolean) => !prev);
+  function MenuIcon(): void{
+    setMenuOpen((prev) => !prev);
   }
 
   return (
