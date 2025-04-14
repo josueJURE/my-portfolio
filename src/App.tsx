@@ -1,24 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
 import ContactRight from "./components/ContactRight";
-import MenuIcon from './components/MenuIcon';
 
 function App() {
-
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  // handleMenuToggle  can be rewritten as a function
-  const handleMenuToggle = (isOpen: boolean) => {
-    setMenuOpen(isOpen)
+  function MenuIcon(): void{
+    setMenuOpen((prev) => !prev);
   }
+
   return (
-    <div className={`App ${menuOpen ? 'change' : ''}`}>
-      <div className="container">
+    <div className="">
+      <div className={`container ${menuOpen === true ? "change" : ""}`}>
         {/* // Navigation */}
-        <MenuIcon onToggle={handleMenuToggle}/>
-     
+        <div
+          onClick={() => MenuIcon()}
+          className={`menu-icon ${menuOpen === true ? "change" : ""}`}
+        >
+          <div className="line line-1"></div>
+          <div className="line line-2"></div>
+        </div>
+
         <nav className="navigation">
           <div className="section-border"></div>
           <div className="nav-items">
@@ -123,7 +127,7 @@ function App() {
           <div className="section-border"></div>
           <div className="contact-content">
             <ContactLeft />
-            <ContactRight/>
+            <ContactRight />
           </div>
         </section>
         {/* // End of Contact // Footer */}
