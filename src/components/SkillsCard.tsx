@@ -1,4 +1,5 @@
 import skillsData from "../utilities/skillsArray";
+import React from "react";
 import { JSX } from "react";
 
 function SkillsCard(): JSX.Element {

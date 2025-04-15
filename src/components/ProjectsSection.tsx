@@ -1,4 +1,5 @@
 import projectData from "../utilities/ProjectSectionArray";
+import React from "react"
 
 function ProjectsSection() {
   return (
