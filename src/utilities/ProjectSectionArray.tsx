@@ -11,9 +11,9 @@ type ProjectDataType = ProjectDescription[];
 const projectData: ProjectDataType = [
   {
     image_video: "video/recipe_app_video.mp4",
-    skills: ["recorded by my co-developer ", "TypeScript, ", "HTML, ", "CSS ,", "Open AI"],
-    projectName: "ChatGPT recipe-app videos",
-    projectDescription: "After completing my 12-week bootcamp, one of my classmates and I teamed up to build an AI-powered recipe application. Watching the video will allow you to see all of the features the application has"
+    skills: ["TypeScript, ", "HTML, ", "CSS, ", "Open AI"],
+    projectName: "ChatGPT recipe-app",
+    projectDescription: "Filmed by my co-developer, this video showcases our AI-powered recipe app. You’ll see all its features in action, including the ability to take a picture of ingredients and generate recipe suggestions based on them."
   },
   {
     image_video: "images/Designer_2.png",
@@ -30,7 +30,7 @@ const projectData: ProjectDataType = [
 
   {
     image_video: "images/project2.png",
-    skills: ["TypeScript, HTML", "CSS"],
+    skills: ["TypeScript, ", "HTML, " , "CSS"],
     projectName: "Calculator",
     projectDescription: "  My main goal is to rewrite the same calculator in Python, a programming language I'm learning. This will not only reinforce my understanding of Python syntax, but also allow me to compare and contrast the different approaches between TypeScript and Python in building similar applications."
   },
