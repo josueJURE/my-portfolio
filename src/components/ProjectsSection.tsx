@@ -31,8 +31,8 @@ function ProjectsSection() {
 
             <p className="project-desc">{item.projectDescription}</p>
             <button type="button" className="project-btn">
-              <a href="https://github.com/fac29b/recipe-for-success">
-                See Codebase{" "}
+              <a href={item.link}>
+                See application{" "}
               </a>
               <i className="fa-sharp fa-solid fa-arrow-right"></i>
             </button>
