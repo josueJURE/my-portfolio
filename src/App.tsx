@@ -3,11 +3,12 @@ import SkillsCard from "./components/SkillsCard";
 import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
 import ContactRight from "./components/ContactRight";
+import Footer from "./components/Footer";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  function MenuIcon(): void{
+  function MenuIcon(): void {
     setMenuOpen((prev) => !prev);
   }
 
@@ -130,23 +131,7 @@ function App() {
             <ContactRight />
           </div>
         </section>
-        {/* // End of Contact // Footer */}
-        <footer className="footer">
-          <div className="icons">
-            <i className="fa-brands fa-facebook-f"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-twitter"></i>
-          </div>
-          <div className="copyright">
-            <p className="year"></p>
-          </div>
-          <div className="author">
-            <p>
-              Made with <span>Love & Passion</span>
-            </p>
-          </div>
-        </footer>
-        {/* // End of Footer */}
+        <Footer />
       </div>
     </div>
   );
