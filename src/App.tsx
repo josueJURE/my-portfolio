@@ -4,11 +4,14 @@ import ProjectsSection from "./components/ProjectsSection";
 import ContactLeft from "./components/ContactLeft";
 import ContactRight from "./components/ContactRight";
 import Footer from "./components/Footer";
+import Icon from "./components/Icon";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
-  function MenuIcon(): void {
+
+
+  function handleClick(): void {
     setMenuOpen((prev) => !prev);
   }
 
@@ -16,13 +19,8 @@ function App() {
     <div className="">
       <div className={`container ${menuOpen === true ? "change" : ""}`}>
         {/* // Navigation */}
-        <div
-          onClick={() => MenuIcon()}
-          className={`menu-icon ${menuOpen === true ? "change" : ""}`}
-        >
-          <div className="line line-1"></div>
-          <div className="line line-2"></div>
-        </div>
+        <Icon onClick={handleClick}/>
+    
 
         <nav className="navigation">
           <div className="section-border"></div>
