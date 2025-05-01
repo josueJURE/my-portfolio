@@ -6,7 +6,7 @@ import ContactRight from "./components/ContactRight";
 import Footer from "./components/Footer";
 import Icon from "./components/Icon";
 
-function App() {
+function App(props) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
 
@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className="">
+      <p>{props.town}</p>
       <div className={`container ${menuOpen === true ? "change" : ""}`}>
         {/* // Navigation */}
         <Icon onClick={handleClick}/>
