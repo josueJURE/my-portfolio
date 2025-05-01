@@ -12,7 +12,7 @@ function SkillsCard(): JSX.Element {
             <span>{item.percentage}</span>
           </div>
           <p>{item.description}</p>
-          <div className="skills-card-progress"></div>
+          {/* <div className="skills-card-progress"></div> */}
         </div>
       ))}
     </div>

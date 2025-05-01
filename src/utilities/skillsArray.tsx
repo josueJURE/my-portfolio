@@ -43,7 +43,13 @@ const skillsData: SkillsDataType = [
       skill: "React",
       percentage: "50%",
       description: "Since starting to volunteer with CAFOD, I've learned a lot more about React and React hooks such as useContext. I've also been exposed to a Next.js"
-    }
+    },
+    {
+      skill: "Prisma ORM",
+      percentage: "30%",
+      description: "A next-generation Node.js and TypeScript ORM that unlocks a new level of developer experience when working with databases, thanks to its type-safety & auto-completion."
+    },
+
   ];
 
   export default skillsData
