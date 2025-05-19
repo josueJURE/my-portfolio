@@ -70,9 +70,9 @@ function App(props) {
                 <a href="https://github.com/josueJURE">
                   <i className="fa-brands fa-github"></i>
                 </a>
-                <a href="https://codewars.com/users/josueJURE">
+                {/* <a href="https://codewars.com/users/josueJURE">
                   <i className="">codewars</i>
-                </a>
+                </a> */}
               </div>
               <div className="cv">
                 <button className="btn cv-btn">
