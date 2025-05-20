@@ -5,7 +5,7 @@ import { FaCirclePause } from "react-icons/fa6";
 import { FaRegStopCircle } from "react-icons/fa";
 import { IoSpeedometer } from "react-icons/io5";
 
-function useTextToSpeech() {
+function TextToSpeechControls() {
   const [count, setCount] = useState<number>(0.25);
   // function handleCount() {
   //   setCount(count > 1.75 ? 0.25 : count + 0.25);
@@ -44,4 +44,4 @@ function useTextToSpeech() {
   );
 }
 
-export default useTextToSpeech;
+export default TextToSpeechControls;

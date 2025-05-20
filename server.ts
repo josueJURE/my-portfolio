@@ -24,8 +24,8 @@ const speechFile = path.resolve("./speech.mp3");
 (async () => {
   const mp3 = await openai.audio.speech.create({
     model: "gpt-4o-mini-tts",
-    voice: "coral",
-    input: "After completing a 12-week bootcamp, building various personal projects, including a full-stack application that integrates the OpenAI API, I am now volunteering as a software developer htmlFor a charity to gain valuable experience and do some good. I'm learning a lot from the mid-level developer I'm working with. I also volunteer as a software coach at Codebar, a charity supporting aspiring developers. Having to articulate my thoughts has made me a better communicator and has also deepened my understanding of some programming concepts. Have a look at my projects below, and then reach out to me!",
+    voice: "alloy",
+    input: "After completing a 12-week bootcamp, building various personal projects, including a full-stack application that integrates the OpenAI API, I am now volunteering as a software developer for a charity to gain valuable experience and do some good. I'm learning a lot from the mid-level developer I'm working with. I also volunteer as a software coach at Codebar, a charity supporting aspiring developers. Having to articulate my thoughts has made me a better communicator and has also deepened my understanding of some programming concepts. Have a look at my projects below, and then reach out to me!",
     instructions: "Speak in a cheerful and positive tone.",
   });
 
