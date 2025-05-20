@@ -28,7 +28,6 @@
   color: #61dafb;
 }
 
-
 .recording {
   width: 50%;
   height: fit-content;
@@ -36,11 +35,18 @@
   align-items: center;
   flex-direction: row;
   margin: auto;
-  background-color: var(--green);
+  background-color: red;
   border-radius: 5px;
   padding: 10px;
   display: none;
 }
+
+
+
+audio::-webkit-media-controls-panel{
+  background-color: cornflowerblue;
+}
+
 
 
 @keyframes App-logo-spin {

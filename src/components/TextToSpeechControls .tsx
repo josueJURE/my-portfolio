@@ -4,6 +4,7 @@ import { FaPlay } from "react-icons/fa";
 import { FaCirclePause } from "react-icons/fa6";
 import { FaRegStopCircle } from "react-icons/fa";
 import { IoSpeedometer } from "react-icons/io5";
+// import '../APP.css';
 
 function TextToSpeechControls() {
   const [count, setCount] = useState<number>(0.25);
@@ -23,7 +24,7 @@ function TextToSpeechControls() {
       <FaCirclePause size={30} />
       <FaRegStopCircle size={30} />
       <IoSpeedometer size={30} /> */}
-      <audio style={{ width: '25rem', height: '9rem',}} controls src="./speech.mp3"></audio>
+      <audio style={{ width: '25rem', height: '9rem'}} controls src="./speech.mp3"></audio>
       <source className="audio_source" type="audio/mpeg" src="./speech.mp3"/>
       <i className="fa-solid fa-microphone" data-name="microphone"></i>
       <i className="fa-solid fa-pause" data-name="pause"></i>
