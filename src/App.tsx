@@ -55,7 +55,7 @@ function App(props) {
                 After completing a 12-week bootcamp, building various personal
                 projects, including a full-stack application that integrates the
                 OpenAI API, I am now volunteering as a software developer
-                htmlFor a charity to gain valuable experience and do some good.
+                for a charity to gain valuable experience and do some good.
                 I'm learning a lot from the mid-level developer I'm working
                 with. I also volunteer as a software coach at Codebar, a charity
                 supporting aspiring developers. Having to articulate my thoughts
