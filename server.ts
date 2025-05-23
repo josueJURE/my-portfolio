@@ -30,7 +30,7 @@ const speechFile = path.resolve("./speech.mp3");
     model: "gpt-4o-mini-tts",
     voice: "echo",
     input: myText.default,
-    instructions: "Speak in a cheerful and positive tone, with a slight French accent.",
+    instructions: "Speak in a cheerful and positive tone, with a British accent.",
   });
 
   const buffer = Buffer.from(await mp3.arrayBuffer());
