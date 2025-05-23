@@ -28,6 +28,27 @@
   color: #61dafb;
 }
 
+.recording {
+  width: 50%;
+  height: fit-content;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  margin: auto;
+  background-color: red;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+
+
+audio::-webkit-media-controls-panel{
+  background-color: cornflowerblue;
+}
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

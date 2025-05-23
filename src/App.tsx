@@ -5,6 +5,9 @@ import ContactLeft from "./components/ContactLeft";
 import ContactRight from "./components/ContactRight";
 import Footer from "./components/Footer";
 import Icon from "./components/Icon";
+// import UseTextToSpeech from "./components/UseTextToSpeech";
+import TextToSpeechControls from "./components/TextToSpeechControls "
+
 
 function App(props) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -63,6 +66,9 @@ function App(props) {
                 understanding of some programming concepts. Have a look at my
                 projects below, and then reach out to me!
               </p>
+
+              <TextToSpeechControls/>
+ 
               <div className="social-media">
                 <a href="https://linkedin.com/in/josué-jure-3799b9127">
                   <i className="fa-brands fa-linkedin-in"></i>
@@ -70,9 +76,9 @@ function App(props) {
                 <a href="https://github.com/josueJURE">
                   <i className="fa-brands fa-github"></i>
                 </a>
-                <a href="https://codewars.com/users/josueJURE">
+                {/* <a href="https://codewars.com/users/josueJURE">
                   <i className="">codewars</i>
-                </a>
+                </a> */}
               </div>
               <div className="cv">
                 <button className="btn cv-btn">
