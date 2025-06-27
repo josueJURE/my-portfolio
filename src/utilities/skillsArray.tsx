@@ -49,6 +49,11 @@ const skillsData: SkillsDataType = [
       percentage: "30%",
       description: "A next-generation Node.js and TypeScript ORM that unlocks a new level of developer experience when working with databases, thanks to its type-safety & auto-completion."
     },
+    {
+      skill: "Playwright",
+      percentage: "20%",
+      description: "I am currently being mentored by a seasoned software developer with over 20 years of experience in the industry. We are focusing on unit testing with Playwright, which has helped me understand the importance of testing in preventing bugs from reaching production."
+    }
 
   ];
 
