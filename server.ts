@@ -21,7 +21,9 @@ console.log("myText:", myText)
 
 
 const openai = new OpenAI({
-  apiKey: process.env.openaiAPI,
+
+apiKey: process.env.OPENAI_API_KEY
+ 
 });
 const speechFile = path.resolve("./speech.mp3");
 
