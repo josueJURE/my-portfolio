@@ -90,33 +90,33 @@ app.post("/", (req: Request, res: Response) => {
 
     main();
 
-    async function createUser(
-      param1: string,
-      param2: string,
-      param3: string,
-      param4: string
-    ) {
-      const user = await prisma.user.create({
-        data: {
-          fullName: param1,
-          email: param2,
-          subject: param3,
-          message: param4,
-        },
-      });
-      console.log("User created:", user);
-    }
+    // async function createUser(
+    //   param1: string,
+    //   param2: string,
+    //   param3: string,
+    //   param4: string
+    // ) {
+    //   const user = await prisma.user.create({
+    //     data: {
+    //       fullName: param1,
+    //       email: param2,
+    //       subject: param3,
+    //       message: param4,
+    //     },
+    //   });
+    //   console.log("User created:", user);
+    // }
 
-    createUser(name, email, subject, message)
-      .then(async () => {
-        await prisma.$disconnect();
-        console.log("User created successfully");
-      })
-      .catch(async (error) => {
-        console.error("Error creating user:", error);
-        await prisma.$disconnect();
-        process.exit(1);
-      });
+    // createUser(name, email, subject, message)
+    //   .then(async () => {
+    //     await prisma.$disconnect();
+    //     console.log("User created successfully");
+    //   })
+    //   .catch(async (error) => {
+    //     console.error("Error creating user:", error);
+    //     await prisma.$disconnect();
+    //     process.exit(1);
+    //   });
   } catch (error) {
     res.send(sendErrorMessage(htmlStyle));
   }

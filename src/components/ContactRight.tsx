@@ -5,7 +5,7 @@ function ContactRight() {
   return (
     <>
       <div className="contact-right">
-        <form action="http://localhost:4001" method="POST">
+        <form action="http://localhost:4001/" method="POST">
           <InputGroups />
 
           <div className="input-group">
