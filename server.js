@@ -207,7 +207,7 @@ app.post("/", (req, res) => {
 
 
 app.use(express.static(path.join(__dirname, "public")));
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5173;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
