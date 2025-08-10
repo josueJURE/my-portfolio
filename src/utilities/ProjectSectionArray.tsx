@@ -36,15 +36,15 @@ const projectData: ProjectDataType = [
     link: "https://josuejure.github.io/calculator/",
     image_video: "images/project2.png",
     skills: ["TypeScript, ", "HTML, " , "CSS"],
-    projectName: "Calculators",
+    projectName: "Calculator",
     projectDescription: "  My main goal is to rewrite the same calculator in Python, a programming language I'm learning. This will not only reinforce my understanding of Python syntax, but also allow me to compare and contrast the different approaches between TypeScript and Python in building similar applications."
   },
   {
-    link: "my-portfolio-e7j0.onrender.com",
-    image_video: "images/project6.png",
+    link: "https://josuejure.github.io/Quiz",
+    image_video: "images/download.jpeg",
     skills: ["HTML, CSS, JavaScript"],
-    projectName: "Showcase website",
-    projectDescription: "This website began as a pure frontend project built primarily with HTML. As my coding skills advanced, I refactored it using TypeScript and React-Vite, then integrated a TypeScript backend. Now, visitors can email me directly from the portfolio via an npm package."
+    projectName: "Anime Quiz",
+    projectDescription: "Since I'm an anime fan and I've always loved Japanese culture I decided to build an anime quiz as one of my first projects. I've recently revisited it in order to improve the UI/UX experience. You can even do the quiz in Japanese if you want to. "
   },
 ];
 
