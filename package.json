@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@prisma/client": "^6.5.0",
+    "@radix-ui/react-slot": "^1.2.3",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
@@ -11,6 +12,7 @@
     "@types/jest": "^27.5.2",
     "@types/react": "^19.0.11",
     "@types/react-dom": "^19.0.4",
+    "class-variance-authority": "^0.7.1",
     "cors": "^2.8.5",
     "dotenv": "^16.6.1",
     "express": "^4.21.2",
@@ -19,6 +21,8 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
+    "tailwind-merge": "^3.3.1",
+    "wavesurfer.js": "^7.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
