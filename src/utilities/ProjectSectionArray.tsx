@@ -11,6 +11,14 @@ type ProjectDataType = ProjectDescription[];
 
 const projectData: ProjectDataType = [
   {
+    link: "https://newsatronix-next.vercel.app/",
+    image_video: "images/newsAlert.jpeg",
+    skills: ["Next.js, Tailwind CSS, ", "TypeScript"],
+    projectName: "News Alert",
+    projectDescription: "I started working on this existing commercial project in November 2024, where I've added features such as the email generator functionality. I am currently working on adding authentication with Next.js."
+  },
+
+  {
     link: "https://recipe-for-success.onrender.com",
     image_video: "video/recipe_app_video.mp4",
     skills: ["Video Demo"],
@@ -29,7 +37,7 @@ const projectData: ProjectDataType = [
     image_video: "images/recipe-app-2.0.jpg",
     skills: ["React, NextJS, CI/CD pipeline"],
     projectName: "ChatGPT recipe-app 2.0",
-    projectDescription: "The application stands as a testament to my continuous learning and passion for web development. It was initially a pure vanilla JS project, but its version 2.0 is written in Next.js, Tailwind CSS, and features automated testing with a CI/CD pipeline. "
+    projectDescription: "The application stands as a testament to my continuous learning and passion for web development. It was initially a pure vanilla JS project, but its version 2.0 is written in Next.js, Tailwind CSS, and features automated testing with a CI/CD pipeline. Work in progress."
   },
   {
     link: "http://shopping-cart-jj.vercel.app/",
