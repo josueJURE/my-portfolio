@@ -42,7 +42,7 @@ const skillsData: SkillsDataType = [
     {
       skill: "React",
       percentage: "50%",
-      description: "Since starting to volunteer with CAFOD, I've learned a lot more about React and React hooks such as useContext. I've also been exposed to a Next.js"
+      description: "I've learned a lot more about React and React hooks through the courses I've completed on Codecademy. I've earned two certificates of completion from this learning platform. In my project section, you will see that three of my projects have been written in React or Next.js."
     },
     {
       skill: "Prisma ORM",
@@ -52,7 +52,7 @@ const skillsData: SkillsDataType = [
     {
       skill: "Playwright",
       percentage: "20%",
-      description: "I am currently being mentored by a seasoned software developer with over 20 years of experience in the industry. We are focusing on unit testing with Playwright, which has helped me understand the importance of testing in preventing bugs from reaching production."
+      description: "I am currently being mentored by a seasoned software developer with 35 years of experience in the industry. We are focusing on unit testing with Playwright, which has helped me understand the importance of testing in preventing bugs from reaching production."
     }
 
   ];
