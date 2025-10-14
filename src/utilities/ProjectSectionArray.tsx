@@ -11,6 +11,14 @@ type ProjectDataType = ProjectDescription[];
 
 const projectData: ProjectDataType = [
   {
+    link: "https://newsalerts.cafod.org.uk/",
+    image_video: "images/news-alert.jpeg",
+    skills: ["News Alerts Commercial project"],
+    projectName: "ChatGPT recipe-app",
+    projectDescription: "I have contributed to the News Alert website to solve a problem: CAFOD's news team used to manually read ten newspapers daily for relevant content. The website automates this monitoring process online, reducing the time required at virtually zero cost."
+  },
+
+  {
     link: "https://recipe-for-success.onrender.com",
     image_video: "video/recipe_app_video.mp4",
     skills: ["Video Demo"],
