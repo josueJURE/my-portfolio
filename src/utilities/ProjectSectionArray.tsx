@@ -15,7 +15,7 @@ const projectData: ProjectDataType = [
     image_video: "images/news-alert.jpeg",
     skills: ["News Alerts Commercial project"],
     projectName: "ChatGPT recipe-app",
-    projectDescription: "I have contributed to the News Alert website to solve a problem: CAFOD's news team used to manually read ten newspapers daily for relevant content. The website automates this monitoring process online, reducing the time required at virtually zero cost."
+    projectDescription: "I have contributed to the News Alert website to solve a problem: CAFOD's news team used to manually read 10 newspapers daily for relevant content. The website automates this monitoring process online, reducing the time required at virtually zero cost."
   },
 
   {
