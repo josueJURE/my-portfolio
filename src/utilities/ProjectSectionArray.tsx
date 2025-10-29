@@ -14,7 +14,7 @@ const projectData: ProjectDataType = [
     link: "https://newsalerts.cafod.org.uk/",
     image_video: "images/news-alert.jpeg",
     skills: ["News Alerts Commercial project"],
-    projectName: "ChatGPT recipe-app",
+    projectName: "Commercial project",
     projectDescription: "I have contributed to the News Alert website to solve a problem: CAFOD's news team used to manually read 10 newspapers daily for relevant content. The website automates this monitoring process online, reducing the time required at virtually zero cost."
   },
 
