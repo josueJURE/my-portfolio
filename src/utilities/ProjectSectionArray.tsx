@@ -11,7 +11,7 @@ type ProjectDataType = ProjectDescription[];
 
 const projectData: ProjectDataType = [
   {
-    link: "https://newsalerts.cafod.org.uk/",
+    link: "https://newsatronix-next.vercel.app/",
     image_video: "images/news-alert.jpeg",
     skills: ["News Alerts Commercial project"],
     projectName: "Commercial project",
